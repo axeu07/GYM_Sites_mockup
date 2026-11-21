@@ -1,0 +1,666 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>IKIGAI Fitness Club · Find your Ikigai · Gym in Jakhan, Rajpur Road, Dehradun</title>
+  <meta name="description" content="Tell us your goal and find your Ikigai: a coached weekly plan across strength, boxing, Zumba, Bhangra, yoga and steam recovery. IKIGAI Fitness Club, Doon Zone Tower, Jakhan, Rajpur Road, Dehradun." />
+  <meta name="keywords" content="gym in Jakhan, gym Rajpur Road Dehradun, boxing Dehradun, steam gym Dehradun, women-friendly gym Dehradun" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="theme-color" content="#F2EEE6" />
+  <link rel="icon" href="../../shared/brand/favicon-32.png" type="image/png" />
+  <link rel="apple-touch-icon" href="../../shared/brand/favicon-180.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=Noto+Serif+JP:wght@500;700;900&family=Geist:wght@300..700&family=Geist+Mono:wght@400..600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- The intro plays on every visit. -->
+  <script>
+    (function () {
+      var d = document.documentElement; d.classList.add("js");
+      // If main.js never runs (offline, blocked), show everything rather than an empty page.
+      setTimeout(function () { if (!window.__ikReady) { d.classList.remove("js"); d.classList.add("intro-seen"); } }, 6000);
+    })();
+  </script>
+</head>
+<body>
+  <!-- LOADER: the four circles come into focus over the mark -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__box">
+      <div class="loader__scan">
+        <span class="logo-mark loader__mark"></span>
+        <i class="loader__line"></i>
+      </div>
+      <div class="loader__read mono">
+        <span id="loaderLabel">生き甲斐</span>
+        <b id="loaderPct">00%</b>
+      </div>
+      <div class="loader__bar"><i id="loaderBar"></i></div>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <span class="nav__progress" aria-hidden="true"><i id="navProgress"></i></span>
+    <div class="nav__inner container">
+      <div class="nav__left">
+        <a class="nav__back mono" href="../../index.html" aria-label="Back to all design directions"><span aria-hidden="true">←</span><span class="nav__back-txt">All directions</span></a>
+        <a class="nav__logo" href="#top" aria-label="IKIGAI Fitness Club — back to top">
+          <span class="logo-mark" aria-hidden="true"></span>
+          <span class="logo-word" aria-hidden="true"></span>
+        </a>
+      </div>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#solutions">Ikigai</a>
+        <a href="#method">Kaizen</a>
+        <a href="#numbers">Numbers</a>
+        <a href="#building">Four circles</a>
+        <a href="#plans">Plans</a>
+        <a href="#book">Visit</a>
+      </nav>
+      <div class="nav__right">
+        <span class="status mono" id="navStatus" title=""><i></i><span>Checking…</span></span>
+        <a class="btn btn--ember btn--sm nav__cta mag" href="#book" data-book="nav">Book free trial</a>
+        <button class="nav__burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE / TABLET MENU -->
+  <div class="menu" id="menu" hidden>
+    <nav class="menu__links" aria-label="Menu">
+      <a href="#solutions"><small class="mono">生</small>Find your Ikigai</a>
+      <a href="#method"><small class="mono">改</small>Kaizen</a>
+      <a href="#numbers"><small class="mono">数</small>Numbers</a>
+      <a href="#building"><small class="mono">円</small>Four circles</a>
+      <a href="#programmes"><small class="mono">道</small>Seven ways in</a>
+      <a href="#plans"><small class="mono">約</small>Plans</a>
+      <a href="#results"><small class="mono">善</small>Reviews</a>
+      <a href="#book"><small class="mono">訪</small>Book &amp; visit</a>
+    </nav>
+    <div class="menu__foot">
+      <a class="btn btn--ember" href="#book">Book a free trial</a>
+      <a class="btn btn--line" data-wa="Hi Ikigai! I have a question." href="#" target="_blank" rel="noopener">WhatsApp us</a>
+      <a class="menu__back mono" href="../../index.html">← All directions</a>
+    </div>
+  </div>
+
+  <main id="top">
+    <!-- 00 · HERO: THE IKIGAI FINDER -->
+    <section class="hero" id="solutions" aria-labelledby="heroTitle" data-live>
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__mesh" aria-hidden="true"><i class="m1"></i><i class="m2"></i><i class="m3"></i></div>
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow mono"><span class="dot"></span><span class="eyebrow__jp">始め</span> Jakhan · Rajpur Road · Dehradun</p>
+          <h1 class="hero__title" id="heroTitle">
+            <span class="line"><span>Find your</span></span>
+            <span class="line"><span><em class="hl">Ikigai.</em> <span class="hero__jp" aria-hidden="true">生き甲斐</span></span></span>
+          </h1>
+          <div class="engine" id="engine">
+            <p class="engine__lead mono">Find your reason to move. The plan builds as you choose.</p>
+            <p class="engine__sentence" id="engineSentence">
+              I want to <span class="nw"><button class="slot" type="button" data-slot="goal" aria-haspopup="listbox" aria-expanded="false"><span class="slot__val">lose fat</span><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5l3 3 3-3"/></svg></button>.</span>
+              I can train <span class="nw"><button class="slot" type="button" data-slot="days" aria-haspopup="listbox" aria-expanded="false"><span class="slot__val">4 days</span><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5l3 3 3-3"/></svg></button></span> a week, in the <span class="nw"><button class="slot" type="button" data-slot="time" aria-haspopup="listbox" aria-expanded="false"><span class="slot__val">evenings</span><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5l3 3 3-3"/></svg></button>.</span>
+              I'm <span class="nw"><button class="slot" type="button" data-slot="exp" aria-haspopup="listbox" aria-expanded="false"><span class="slot__val">new to the gym</span><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5l3 3 3-3"/></svg></button>.</span>
+            </p>
+            <div class="pop" id="pop" role="listbox" tabindex="-1" hidden></div>
+          </div>
+          <div class="hero__ctas">
+            <a class="btn btn--ember btn--lg mag" href="#book" data-book="engine">Book a free trial <span aria-hidden="true">→</span></a>
+            <a class="btn btn--ghost btn--lg" data-wa="Hi Ikigai! I'd like to know more about joining." href="#" target="_blank" rel="noopener">WhatsApp us</a>
+          </div>
+          <ul class="hero__trust mono" id="heroTrust" aria-label="Ratings and facts"></ul>
+        </div>
+
+        <article class="sol" id="sol" aria-labelledby="solTitle">
+          <span class="sol__scan" aria-hidden="true"><i></i></span>
+          <div class="sol__band">
+            <video class="sol__video" id="solVideo" muted playsinline loop preload="auto" aria-hidden="true"></video>
+            <img class="sol__still" id="solStill" alt="" hidden />
+            <div class="sol__shade" aria-hidden="true"></div>
+            <div class="sol__head mono">
+              <span>Your Ikigai</span>
+              <span class="sol__rx" id="solRx">生 · IKG-0000</span>
+              <span class="live"><i></i>Live</span>
+            </div>
+            <div class="sol__titles">
+              <h2 class="sol__title" id="solTitle">Burn &amp; Build</h2>
+              <p class="sol__sum" id="solSum"></p>
+            </div>
+          </div>
+          <div class="sol__body">
+            <div class="week-wrap">
+              <div class="week__head"><span class="k mono">Your week</span><span class="floors" id="solFloors" aria-label="Circles you'll use"></span></div>
+              <div class="week" id="solWeek" role="list" aria-label="Your week"></div>
+            </div>
+            <div class="sol__grid">
+              <div class="sol__cell">
+                <span class="k mono">Coaching</span>
+                <b id="solCoach"></b>
+                <small id="solCoachNote"></small>
+              </div>
+              <div class="sol__cell sol__plan">
+                <span class="k mono">Recommended plan</span>
+                <b id="solPlan"></b>
+                <small id="solPlanNote"></small>
+              </div>
+              <div class="sol__cell sol__cell--wide">
+                <span class="k mono">Classes that fit <span class="tag tag--sample">Sample</span></span>
+                <ul class="sol__classes" id="solClasses"></ul>
+              </div>
+            </div>
+            <figure class="proj" id="solProj">
+              <figcaption class="proj__cap">
+                <span class="k mono" id="projLabel">12-week projection</span>
+                <b id="projRange"></b>
+              </figcaption>
+              <svg class="proj__svg" id="projSvg" viewBox="0 0 320 96" preserveAspectRatio="none" aria-hidden="true"></svg>
+              <div class="proj__ticks mono" aria-hidden="true"><span>Wk 0</span><span>4</span><span>8</span><span>12</span></div>
+              <p class="proj__note"><span class="tag tag--sample">Sample</span> Dots mark a check-in with your coach every 4 weeks. Your first day sets the real numbers.</p>
+            </figure>
+            <a class="btn btn--ink btn--block" href="#book" data-book="engine">Try this free <span aria-hidden="true">→</span></a>
+          </div>
+          <p class="sr-only" id="solLive" aria-live="polite"></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CROSSING TAPES: proof in numbers + the goals we solve (pick one to rebuild your plan above) -->
+    <section class="tapes" aria-label="IKIGAI Fitness Club in numbers, and the goals we help with" data-live>
+      <div class="tape tape--ink"><div class="marquee__track ticker__track" id="ticker" data-dir="-1" data-speed="44"></div></div>
+      <div class="tape tape--ember"><div class="marquee__track goals__track" id="goalTape" data-dir="1" data-speed="36" role="group" aria-label="Pick a goal to rebuild your plan"></div></div>
+    </section>
+
+    <!-- 01 · THE METHOD -->
+    <section class="method section" id="method" aria-labelledby="methodTitle" data-live>
+      <div class="method__pin">
+        <div class="container method__grid">
+          <div class="method__head">
+            <p class="kicker mono"><span>01</span> <span class="kicker__jp">改善</span> Kaizen</p>
+            <h2 class="h2" id="methodTitle">Every rep <span class="soft">has a reason.</span></h2>
+            <p class="lead">Kaizen means continuous improvement. Every plan runs the same loop: listen, plan, train, improve. Then go round again, a little better each time.</p>
+            <div class="loop" id="loop">
+              <span class="loop__pulse" id="loopPulse" aria-hidden="true"></span>
+              <svg viewBox="0 0 400 400" class="loop__svg" aria-hidden="true">
+                <defs>
+                  <linearGradient id="loopGrad" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#D7261E" />
+                    <stop offset="1" stop-color="#E8564E" />
+                  </linearGradient>
+                </defs>
+                <circle class="loop__track" cx="200" cy="200" r="150" />
+                <circle class="loop__arc" id="loopArc" cx="200" cy="200" r="150" />
+                <g id="loopNodes"></g>
+                <circle class="loop__ghost g3" cx="200" cy="50" r="6" />
+                <circle class="loop__ghost g2" cx="200" cy="50" r="7.5" />
+                <circle class="loop__ghost g1" cx="200" cy="50" r="9" />
+                <circle class="loop__dot" id="loopDot" cx="200" cy="50" r="10" />
+              </svg>
+              <div class="loop__centre">
+                <span class="mono" id="loopNum">01 / 04</span>
+                <b id="loopName">Listen</b>
+              </div>
+            </div>
+          </div>
+          <ol class="steps" id="steps"></ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 · KNOW YOUR NUMBERS -->
+    <section class="numbers section" id="numbers" aria-labelledby="numbersTitle">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <p class="kicker mono"><span>02</span> Know your numbers</p>
+            <h2 class="h2" id="numbersTitle">Two minutes. <span class="soft">No sign-up.</span></h2>
+          </div>
+          <p class="lead">A first estimate of where you stand: the same numbers a coach starts from. On your free trial, a coach checks them properly.</p>
+        </div>
+        <div class="calc" id="calc">
+          <form class="calc__in card" id="calcForm" onsubmit="return false" aria-label="Your details">
+            <fieldset class="seg-field">
+              <legend class="k mono">Sex</legend>
+              <div class="seg" role="radiogroup" aria-label="Sex">
+                <label><input type="radio" name="sex" value="m" checked /><span>Male</span></label>
+                <label><input type="radio" name="sex" value="f" /><span>Female</span></label>
+              </div>
+            </fieldset>
+            <div class="range-field">
+              <label class="k mono" for="inAge">Age</label>
+              <output class="range__val" for="inAge" id="outAge">30 <small>yrs</small></output>
+              <input type="range" id="inAge" min="16" max="80" step="1" value="30" />
+            </div>
+            <div class="range-field">
+              <label class="k mono" for="inHeight">Height</label>
+              <output class="range__val" for="inHeight" id="outHeight">172 <small>cm</small></output>
+              <input type="range" id="inHeight" min="140" max="205" step="1" value="172" />
+            </div>
+            <div class="range-field">
+              <label class="k mono" for="inWeight">Weight</label>
+              <output class="range__val" for="inWeight" id="outWeight">72 <small>kg</small></output>
+              <input type="range" id="inWeight" min="38" max="160" step="1" value="72" />
+            </div>
+            <fieldset class="seg-field">
+              <legend class="k mono">How active is your week?</legend>
+              <div class="seg seg--wrap" role="radiogroup" aria-label="Activity level" id="actSeg"></div>
+            </fieldset>
+            <fieldset class="seg-field">
+              <legend class="k mono">Goal</legend>
+              <div class="seg" role="radiogroup" aria-label="Goal">
+                <label><input type="radio" name="cgoal" value="lose" checked /><span>Lose fat</span></label>
+                <label><input type="radio" name="cgoal" value="keep" /><span>Maintain</span></label>
+                <label><input type="radio" name="cgoal" value="gain" /><span>Build muscle</span></label>
+              </div>
+            </fieldset>
+          </form>
+
+          <div class="calc__out" aria-live="polite">
+            <div class="card tile tile--bmi">
+              <span class="k mono">BMI <span class="tag tag--info">Asian cut-offs</span></span>
+              <div class="big"><b id="oBmi">26.4</b><span id="oBmiCat" class="pill">—</span></div>
+              <div class="scale" aria-hidden="true">
+                <span style="--w:8.5" class="s1"></span><span style="--w:4.5" class="s2"></span><span style="--w:2" class="s3"></span><span style="--w:15" class="s4"></span>
+                <i id="oBmiMark"></i>
+              </div>
+              <div class="scale__legend mono" aria-hidden="true"><span>&lt;18.5</span><span>18.5–22.9</span><span>23–24.9</span><span>25+</span></div>
+            </div>
+            <div class="card tile">
+              <span class="k mono">Resting burn<span class="k__x">&nbsp;(BMR)</span></span>
+              <div class="big"><b id="oBmr">1,749</b><small>kcal / day</small></div>
+              <p class="tile__note">Mifflin–St Jeor estimate of what your body burns at rest.</p>
+            </div>
+            <div class="card tile">
+              <span class="k mono">To maintain</span>
+              <div class="big"><b id="oTdee">2,405</b><small>kcal / day</small></div>
+              <p class="tile__note" id="oTdeeNote">Resting burn × your activity level.</p>
+            </div>
+            <div class="card tile tile--goal">
+              <span class="k mono" id="oGoalLabel">For fat loss</span>
+              <div class="big"><b id="oGoal">2,005</b><small>kcal / day</small></div>
+              <div class="ring-row">
+                <svg class="ring" viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="18" class="ring__bg"/><circle cx="22" cy="22" r="18" class="ring__fg" id="oGoalRing"/></svg>
+                <p class="tile__note" id="oGoalNote">A gentle 400 kcal daily deficit.</p>
+              </div>
+            </div>
+            <div class="card tile">
+              <span class="k mono">Protein</span>
+              <div class="big"><b id="oProtein">125</b><small>g / day</small></div>
+              <div class="ring-row">
+                <svg class="ring ring--hanko" viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="18" class="ring__bg"/><circle cx="22" cy="22" r="18" class="ring__fg" id="oProteinRing"/></svg>
+                <p class="tile__note">1.6 g per kg — keeps muscle while you change.</p>
+              </div>
+            </div>
+            <div class="card tile tile--water">
+              <span class="k mono">Water</span>
+              <div class="big"><b id="oWater">2.7</b><small>litres / day</small></div>
+              <div class="glass" aria-hidden="true"><i id="oWaterFill"></i></div>
+            </div>
+            <a class="card tile tile--cta" href="#book" data-book="numbers">
+              <span class="k mono">Check it properly</span>
+              <b>A coach goes through your numbers on your first day. Free.</b>
+              <span class="tile__go">Book a free trial <span aria-hidden="true">→</span></span>
+            </a>
+          </div>
+        </div>
+        <p class="fineprint">Estimates for healthy adults, not medical advice. BMI uses the lower cut-offs recommended for South Asian adults.</p>
+      </div>
+    </section>
+
+    <!-- 03 · THE BUILDING -->
+    <section class="building section" id="building" aria-labelledby="buildingTitle" data-live>
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <p class="kicker mono"><span>03</span> <span class="kicker__jp">生き甲斐</span> The four circles</p>
+            <h2 class="h2" id="buildingTitle">Four circles. <span class="soft">One floor.</span></h2>
+          </div>
+          <p class="lead">Ikigai sits where four circles overlap: what you love, what you're good at, what the world needs and what you need. The club is built the same way, and your plan draws on all four.</p>
+        </div>
+        <div class="bld" id="bld">
+          <div class="bld__stage">
+            <div class="iso" id="iso"></div>
+            <div class="bld__tabs" id="bldTabs" role="tablist" aria-label="Circles"></div>
+          </div>
+          <article class="bld__panel card" id="bldPanel" aria-live="polite"></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 · PROGRAMMES -->
+    <section class="programmes section" id="programmes" aria-labelledby="progTitle">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <p class="kicker mono"><span>04</span> <span class="kicker__jp">道</span> Michi</p>
+            <h2 class="h2" id="progTitle">Seven <span class="soft">ways in.</span></h2>
+          </div>
+          <p class="lead">The gym floor, cardio, a boxing club, Zumba, Bhangra, yoga and personal training. Pick yours, or let a coach pick for you.</p>
+        </div>
+        <div class="filters" id="progFilters" role="tablist" aria-label="Filter programmes"></div>
+        <div class="bento" id="progGrid"></div>
+      </div>
+    </section>
+
+    <!-- 05 · QUIET HOURS -->
+    <section class="hours section" id="hours" aria-labelledby="hoursTitle" data-live>
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <p class="kicker mono"><span>05</span> Quiet hours</p>
+            <h2 class="h2" id="hoursTitle">Find your <span class="soft">quiet hour.</span></h2>
+          </div>
+          <p class="lead">Early mornings and 6–9 pm are the busiest. Pick a day to see what runs, and when the floor is calm. <span class="tag tag--sample">Sample</span></p>
+        </div>
+        <div class="heat-wrap card">
+          <div class="heat" id="heat" role="group" aria-label="How busy the club is, by day and hour"></div>
+          <div class="heat__foot"><div class="heat__legend mono" aria-hidden="true"><span>Quiet</span><i></i><span>Peak</span></div><p class="heat__now mono" id="heatNow"></p></div>
+          <div class="dayplan" id="dayplan" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06 · PLANS -->
+    <section class="plans section" id="plans" aria-labelledby="plansTitle">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <p class="kicker mono"><span>06</span> <span class="kicker__jp">約束</span> Yakusoku</p>
+            <h2 class="h2" id="plansTitle">A promise <span class="soft">to yourself.</span></h2>
+          </div>
+          <p class="lead">Premium gym, local price. The longer you commit, the less each day costs.</p>
+        </div>
+        <div class="pc" id="pc">
+          <div class="pc__in card">
+            <span class="k mono">Choose a duration</span>
+            <div class="seg seg--big" role="radiogroup" aria-label="Plan duration" id="pcSeg"></div>
+            <span class="k mono pc__k2">Membership includes <span class="tag tag--sample">Sample</span></span>
+            <ul class="ticks" id="pcIncludes"></ul>
+            <span class="k mono pc__k2">Add-ons</span>
+            <div class="toggles">
+              <label class="toggle">
+                <input type="checkbox" id="addScan" />
+                <span class="toggle__ui" aria-hidden="true"></span>
+                <span class="toggle__txt"><b>I want to box</b><small>Ikigai Boxing Club batches · timings to confirm</small></span>
+              </label>
+              <label class="toggle">
+                <input type="checkbox" id="addPt" />
+                <span class="toggle__ui" aria-hidden="true"></span>
+                <span class="toggle__txt"><b>Personal training</b><small>Priced by frequency. We'll quote on WhatsApp</small></span>
+              </label>
+            </div>
+          </div>
+          <div class="pc__out">
+            <div class="pc__top">
+              <span class="k mono">Your plan</span>
+              <span class="pill pill--ember" id="pcBadge" hidden>Best value</span>
+            </div>
+            <div class="pc__total"><b id="pcTotal">₹12,000</b><span id="pcName">12 Months</span></div>
+            <div class="pc__trio">
+              <div><span class="k mono">Per month</span><b id="pcMonth">₹1,000</b></div>
+              <div><span class="k mono">Per day</span><b id="pcDay">₹33</b></div>
+              <div><span class="k mono">You save</span><b id="pcSave" class="save">₹4,000</b></div>
+            </div>
+            <p class="pc__pt" id="pcPt" hidden>+ Personal training — quoted on request</p>
+            <div class="pc__bars" id="pcBars" aria-label="Cost per day by plan"></div>
+            <div class="pc__ctas">
+              <a class="btn btn--ember mag" href="#book" data-book="plan" id="pcLock">Start with a free trial <span aria-hidden="true">→</span></a>
+              <a class="btn btn--line-dark" id="pcWa" href="#" target="_blank" rel="noopener">Ask on WhatsApp</a>
+            </div>
+            <p class="pc__note">₹8,000 / 6 months and ₹12,000 / 12 months as seen in the club's reels (may be offers). Other prices, GST and inclusions to confirm.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07 · RESULTS -->
+    <section class="results section" id="results" aria-labelledby="resultsTitle">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <p class="kicker mono"><span>07</span> <span class="kicker__jp">改善</span> Kaizen</p>
+            <h2 class="h2" id="resultsTitle">Small steps. <span class="soft">Real results.</span></h2>
+          </div>
+          <p class="lead">What reviewers praise, in four themes, plus the community notice board. Member before-and-afters will follow once members consent.</p>
+        </div>
+        <div class="res-grid">
+          <div class="card res-chart">
+            <span class="k mono">What reviewers praise · paraphrased</span>
+            <div class="dchart" id="dchart"></div>
+            <ul class="res-quals" id="resQuals"></ul>
+          </div>
+          <div class="res-ratings" id="ratings"></div>
+          <button class="card media-tile spot spot--tilt" type="button" data-video="day" data-title="Just another day at Ikigai" data-sub="Zumba in the studio · with sound · 0:20">
+            <img src="../../shared/img/zumba-class-sm.jpg" srcset="../../shared/img/zumba-class-sm.jpg 400w" sizes="(min-width: 1024px) 24vw, 90vw" alt="Members dancing in a Zumba class at Ikigai" loading="lazy" />
+            <span class="spotlayer" aria-hidden="true"></span>
+            <span class="media-tile__play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+            <span class="media-tile__cap"><b>A day at Ikigai</b><small class="mono">Zumba · 0:20</small></span>
+          </button>
+          <button class="card media-tile spot spot--tilt" type="button" data-video="film" data-title="The reel" data-sub="Build endurance. Get stronger. · 0:14">
+            <img src="../../shared/img/runner-sm.jpg" alt="A member running on a treadmill in the club's reel" loading="lazy" />
+            <span class="spotlayer" aria-hidden="true"></span>
+            <span class="media-tile__play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+            <span class="media-tile__cap"><b>The reel</b><small class="mono">From Instagram · 0:14</small></span>
+          </button>
+        </div>
+        <div class="reviews" id="reviews"></div>
+      </div>
+    </section>
+
+    <!-- 08 · COACHES -->
+    <section class="coaches section" id="coaches" aria-labelledby="coachTitle">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <p class="kicker mono"><span>08</span> <span class="kicker__jp">先生</span> Sensei</p>
+            <h2 class="h2" id="coachTitle">Coaches who <span class="soft">know your name.</span></h2>
+          </div>
+          <p class="lead">Friendly, qualified and watching your form: it's what reviewers mention most. Names and portraits come from the club. <span class="tag tag--confirm">To confirm</span></p>
+        </div>
+        <div class="team" id="team"></div>
+      </div>
+    </section>
+
+    <!-- 09 · FAQ -->
+    <section class="faq section" id="faq" aria-labelledby="faqTitle">
+      <div class="container faq__grid">
+        <div>
+          <p class="kicker mono"><span>09</span> Questions</p>
+          <h2 class="h2" id="faqTitle">Ask anything. <span class="soft">We'll answer.</span></h2>
+          <p class="lead">Search, or message the desk on WhatsApp. <span class="tag tag--confirm">Answers to confirm</span></p>
+        </div>
+        <div class="faq__box">
+          <label class="search">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+            <span class="sr-only">Search questions</span>
+            <input type="search" id="faqSearch" placeholder="Try “parking”, “women” or “boxing”" autocomplete="off" />
+            <span class="search__count mono" id="faqCount"></span>
+          </label>
+          <div class="faq__list" id="faqList"></div>
+          <div class="faq__empty card" id="faqEmpty" hidden>
+            <p>No answer for that yet.</p>
+            <a class="btn btn--ember btn--sm" id="faqAsk" href="#" target="_blank" rel="noopener">Ask on WhatsApp <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10 · BOOK -->
+    <section class="book section" id="book" aria-labelledby="bookTitle" data-live>
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <p class="kicker mono"><span>10</span> <span class="kicker__jp">入門</span> Book</p>
+            <h2 class="h2" id="bookTitle">Your first day <em class="hl">is on us.</em></h2>
+          </div>
+          <p class="lead">A short chat with a coach, a session on the floor or in a class, and a look at the boxing club and the steam room. <span class="tag tag--confirm">Trial policy to confirm</span></p>
+        </div>
+        <div class="book__grid">
+          <div class="card booker" id="booker">
+            <form class="bform" id="bform" novalidate>
+              <div class="bstep">
+                <span class="bstep__n mono">1</span>
+                <div class="bstep__body">
+                  <span class="k mono">Pick a day</span>
+                  <div class="days" id="bDays" role="radiogroup" aria-label="Day"></div>
+                </div>
+              </div>
+              <div class="bstep">
+                <span class="bstep__n mono">2</span>
+                <div class="bstep__body">
+                  <span class="k mono">Pick a time <small id="bSlotHint"></small></span>
+                  <div class="slots" id="bSlots" role="radiogroup" aria-label="Time"></div>
+                  <p class="err" id="errSlot" hidden>Pick a day and a time.</p>
+                </div>
+              </div>
+              <div class="bstep">
+                <span class="bstep__n mono">3</span>
+                <div class="bstep__body fields">
+                  <label class="field">
+                    <span class="k mono">Your name</span>
+                    <input type="text" id="bName" autocomplete="name" placeholder="Full name" aria-describedby="errName" />
+                    <span class="err" id="errName" hidden>Please add your name.</span>
+                  </label>
+                  <label class="field">
+                    <span class="k mono">Mobile</span>
+                    <span class="phone"><span class="mono">+91</span><input type="tel" id="bPhone" inputmode="numeric" autocomplete="tel-national" placeholder="98765 43210" aria-describedby="errPhone" /></span>
+                    <span class="err" id="errPhone" hidden>Enter a 10-digit Indian mobile number.</span>
+                  </label>
+                  <label class="field">
+                    <span class="k mono">Goal</span>
+                    <select id="bGoal"></select>
+                  </label>
+                  <label class="field field--wide">
+                    <span class="k mono">Anything we should know? <small>(optional)</small></span>
+                    <textarea id="bNote" rows="2" placeholder="Old injuries, women-only batch, questions…"></textarea>
+                  </label>
+                </div>
+              </div>
+              <button class="btn btn--ember btn--lg btn--block" type="submit" id="bSubmit">Confirm my free trial <span aria-hidden="true">→</span></button>
+              <p class="fineprint">Demo only — nothing is sent until you choose WhatsApp.</p>
+            </form>
+            <div class="ticket" id="ticket" hidden tabindex="-1" aria-live="polite"></div>
+          </div>
+
+          <aside class="visit card" aria-label="Visit the club">
+<div class="visit__map" id="cmap">
+              <svg class="cmap" viewBox="40 40 600 375" preserveAspectRatio="xMidYMid slice" role="img" aria-labelledby="cmapT">
+                <title id="cmapT">Schematic map, not to scale: up Rajpur Road to Jakhan, then to IKIGAI Fitness Club on the first floor of Doon Zone Tower</title>
+                <defs>
+                  <path id="cmSah" d="M-60 420 C 110 350, 230 250, 330 160 S 560 60, 860 20"/><path id="cmMal" d="M330 160 C 370 200, 410 236, 450 270 S 530 380, 590 520"/><path id="cmRoute" d="M-60 420 C 110 350, 230 250, 330 160 C 370 200, 410 236, 450 270"/>
+                  <filter id="cmShadow" x="-20%" y="-30%" width="140%" height="170%"><feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#0A0A0A" flood-opacity=".16"/></filter>
+                </defs>
+                <rect x="-80" y="-60" width="960" height="620" class="cm-ground"/>
+                <g><rect class="cm-blk" x="-40" y="-30" width="66" height="56" rx="9"/><rect class="cm-blk" x="-40" y="42" width="66" height="50" rx="9"/><rect class="cm-blk" x="-40" y="114" width="66" height="56" rx="9"/><rect class="cm-blk" x="-40" y="186" width="66" height="50" rx="9"/><rect class="cm-blk" x="-40" y="258" width="66" height="56" rx="9"/><rect class="cm-blk" x="-40" y="330" width="66" height="50" rx="9"/><rect class="cm-blk" x="-40" y="402" width="66" height="56" rx="9"/><rect class="cm-blk" x="-40" y="474" width="66" height="50" rx="9"/><rect class="cm-blk" x="42" y="-30" width="66" height="50" rx="9"/><rect class="cm-blk" x="42" y="42" width="60" height="56" rx="9"/><rect class="cm-blk" x="42" y="114" width="54" height="50" rx="9"/><rect class="cm-blk" x="42" y="186" width="66" height="56" rx="9"/><rect class="cm-blk" x="42" y="258" width="60" height="50" rx="9"/><rect class="cm-blk" x="42" y="330" width="54" height="56" rx="9"/><rect class="cm-blk" x="42" y="402" width="66" height="50" rx="9"/><rect class="cm-blk" x="42" y="474" width="60" height="56" rx="9"/><rect class="cm-blk" x="124" y="-30" width="66" height="56" rx="9"/><rect class="cm-park" x="124" y="42" width="54" height="50" rx="9"/><rect class="cm-blk" x="124" y="114" width="60" height="56" rx="9"/><rect class="cm-blk" x="124" y="186" width="66" height="50" rx="9"/><rect class="cm-blk" x="124" y="258" width="54" height="56" rx="9"/><rect class="cm-blk" x="124" y="330" width="60" height="50" rx="9"/><rect class="cm-blk" x="124" y="402" width="66" height="56" rx="9"/><rect class="cm-blk" x="124" y="474" width="54" height="50" rx="9"/><rect class="cm-blk" x="206" y="-30" width="66" height="50" rx="9"/><rect class="cm-blk" x="206" y="42" width="66" height="56" rx="9"/><rect class="cm-blk" x="206" y="114" width="66" height="50" rx="9"/><rect class="cm-blk" x="206" y="186" width="66" height="56" rx="9"/><rect class="cm-blk" x="206" y="258" width="66" height="50" rx="9"/><rect class="cm-blk" x="206" y="330" width="66" height="56" rx="9"/><rect class="cm-blk" x="206" y="402" width="66" height="50" rx="9"/><rect class="cm-blk" x="206" y="474" width="66" height="56" rx="9"/><rect class="cm-blk" x="288" y="-30" width="66" height="56" rx="9"/><rect class="cm-blk" x="288" y="42" width="60" height="50" rx="9"/><rect class="cm-blk" x="288" y="114" width="54" height="56" rx="9"/><rect class="cm-blk" x="288" y="186" width="66" height="50" rx="9"/><rect class="cm-blk" x="288" y="258" width="60" height="56" rx="9"/><rect class="cm-blk" x="288" y="330" width="54" height="50" rx="9"/><rect class="cm-blk" x="288" y="402" width="66" height="56" rx="9"/><rect class="cm-blk" x="288" y="474" width="60" height="50" rx="9"/><rect class="cm-blk" x="370" y="-30" width="66" height="50" rx="9"/><rect class="cm-blk" x="370" y="42" width="54" height="56" rx="9"/><rect class="cm-blk" x="370" y="114" width="60" height="50" rx="9"/><rect class="cm-blk" x="370" y="186" width="66" height="56" rx="9"/><rect class="cm-blk" x="370" y="258" width="54" height="50" rx="9"/><rect class="cm-blk" x="370" y="330" width="60" height="56" rx="9"/><rect class="cm-blk" x="370" y="402" width="66" height="50" rx="9"/><rect class="cm-blk" x="370" y="474" width="54" height="56" rx="9"/><rect class="cm-blk" x="452" y="-30" width="66" height="56" rx="9"/><rect class="cm-blk" x="452" y="42" width="66" height="50" rx="9"/><rect class="cm-blk" x="452" y="114" width="66" height="56" rx="9"/><rect class="cm-blk" x="452" y="186" width="66" height="50" rx="9"/><rect class="cm-blk" x="452" y="258" width="66" height="56" rx="9"/><rect class="cm-blk" x="452" y="330" width="66" height="50" rx="9"/><rect class="cm-blk" x="452" y="402" width="66" height="56" rx="9"/><rect class="cm-blk" x="452" y="474" width="66" height="50" rx="9"/><rect class="cm-blk" x="534" y="-30" width="66" height="50" rx="9"/><rect class="cm-blk" x="534" y="42" width="60" height="56" rx="9"/><rect class="cm-blk" x="534" y="114" width="54" height="50" rx="9"/><rect class="cm-blk" x="534" y="186" width="66" height="56" rx="9"/><rect class="cm-blk" x="534" y="258" width="60" height="50" rx="9"/><rect class="cm-blk" x="534" y="330" width="54" height="56" rx="9"/><rect class="cm-blk" x="534" y="402" width="66" height="50" rx="9"/><rect class="cm-blk" x="534" y="474" width="60" height="56" rx="9"/><rect class="cm-blk" x="616" y="-30" width="66" height="56" rx="9"/><rect class="cm-blk" x="616" y="42" width="54" height="50" rx="9"/><rect class="cm-blk" x="616" y="114" width="60" height="56" rx="9"/><rect class="cm-blk" x="616" y="186" width="66" height="50" rx="9"/><rect class="cm-blk" x="616" y="258" width="54" height="56" rx="9"/><rect class="cm-blk" x="616" y="330" width="60" height="50" rx="9"/><rect class="cm-blk" x="616" y="402" width="66" height="56" rx="9"/><rect class="cm-blk" x="616" y="474" width="54" height="50" rx="9"/><rect class="cm-blk" x="698" y="-30" width="66" height="50" rx="9"/><rect class="cm-blk" x="698" y="42" width="66" height="56" rx="9"/><rect class="cm-blk" x="698" y="114" width="66" height="50" rx="9"/><rect class="cm-blk" x="698" y="186" width="66" height="56" rx="9"/><rect class="cm-blk" x="698" y="258" width="66" height="50" rx="9"/><rect class="cm-blk" x="698" y="330" width="66" height="56" rx="9"/><rect class="cm-blk" x="698" y="402" width="66" height="50" rx="9"/><rect class="cm-blk" x="698" y="474" width="66" height="56" rx="9"/><rect class="cm-blk" x="780" y="-30" width="66" height="56" rx="9"/><rect class="cm-blk" x="780" y="42" width="60" height="50" rx="9"/><rect class="cm-blk" x="780" y="114" width="54" height="56" rx="9"/><rect class="cm-blk" x="780" y="186" width="66" height="50" rx="9"/><rect class="cm-blk" x="780" y="258" width="60" height="56" rx="9"/><rect class="cm-blk" x="780" y="330" width="54" height="50" rx="9"/><rect class="cm-blk" x="780" y="402" width="66" height="56" rx="9"/><rect class="cm-blk" x="780" y="474" width="60" height="50" rx="9"/></g>
+                <g fill="none" stroke-linecap="round">
+                  <path class="cm-case" d="M178 -20 L222 540" stroke-width="15"/><path class="cm-st" d="M178 -20 L222 540" stroke-width="12"/>
+                  <path class="cm-case" d="M586 -20 L622 540" stroke-width="15"/><path class="cm-st" d="M586 -20 L622 540" stroke-width="12"/>
+                                    <use href="#cmSah" class="cm-case" stroke-width="33"/><use href="#cmSah" class="cm-st" stroke-width="29"/>
+                  <use href="#cmMal" class="cm-case" stroke-width="25"/><use href="#cmMal" class="cm-st" stroke-width="21"/>
+                </g>
+                <text class="cm-road"><textPath href="#cmSah" startOffset="494"><tspan dy="4.5">RAJPUR ROAD · TO MUSSOORIE</tspan></textPath></text>
+                <text class="cm-road cm-road--side"><textPath href="#cmMal" startOffset="9%"><tspan dy="-19">DOON ZONE TOWER</tspan></textPath></text>
+                <text class="cm-area" x="478" y="126">JAKHAN</text>
+                <path class="cm-hl" pathLength="1" d="M-60 420 C 110 350, 230 250, 330 160 C 370 200, 410 236, 450 270"/>
+                <path class="cm-route" pathLength="1" d="M-60 420 C 110 350, 230 250, 330 160 C 370 200, 410 236, 450 270"/>
+                <g class="cm-chowk"><rect x="180" y="134" width="124" height="26" rx="13"/><circle cx="330" cy="160" r="9"/><text x="242" y="151.5" text-anchor="middle">JAKHAN</text></g>
+                <circle class="cm-dot" r="7"><animateMotion id="cmMove" dur="4.6s" begin="indefinite" repeatCount="indefinite" calcMode="spline" keyPoints="0;1" keyTimes="0;1" keySplines=".45 0 .35 1"><mpath href="#cmRoute"/></animateMotion><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.08;.86;1" dur="4.6s" begin="cmMove.begin" repeatCount="indefinite"/></circle>
+                <circle class="cm-ring" cx="450" cy="270" r="18"/>
+                <g class="cm-pin"><circle cx="450" cy="270" r="17"/><circle class="cm-pin__in" cx="450" cy="270" r="6.5"/></g>
+                <g class="cm-card" filter="url(#cmShadow)"><rect x="236" y="290" width="200" height="60" rx="14"/><text class="cm-card__t" x="254" y="317">IKIGAI Fitness Club</text><text class="cm-card__s" x="254" y="337">DOON ZONE TOWER · 1ST FLOOR</text></g>
+              </svg>
+              <span class="cmap__note mono" aria-hidden="true">Schematic · not to scale</span>
+              <a class="btn btn--line btn--sm cmap__open" id="mapOpen" href="#" target="_blank" rel="noopener">Open in Google Maps <span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="visit__body">
+              <span class="status status--lg mono" id="visitStatus"><i></i><span></span></span>
+              <address id="visitAddr"></address>
+              <ul class="hours-list" id="hoursList"></ul>
+              <div class="visit__btns">
+                <a class="btn btn--ink btn--sm" id="vDir" href="#" target="_blank" rel="noopener">Directions</a>
+                <a class="btn btn--line btn--sm" id="vCall" href="#">Call</a>
+                <a class="btn btn--line btn--sm" id="vWa" href="#" target="_blank" rel="noopener">WhatsApp</a>
+                <a class="btn btn--line btn--sm" id="vMail" href="#">Email</a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="foot" data-live>
+    <div class="container">
+      <div class="foot__top">
+        <p class="foot__big">Find your <em class="hl">Ikigai.</em></p>
+        <a class="btn btn--ember btn--lg mag" href="#book" data-book="footer">Book a free trial <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="foot__cols">
+        <div class="foot__brand">
+          <span class="logo-lockup" aria-hidden="true"></span>
+          <p class="mono">Find your reason to move.</p>
+          <p class="foot__line"><span class="foot__jp">生き甲斐</span> · iki, life · gai, worth.</p>
+        </div>
+        <nav aria-label="Footer">
+          <span class="k mono">Explore</span>
+          <div class="foot__links"><a href="#solutions">Find your Ikigai</a><a href="#method">Kaizen</a><a href="#numbers">Numbers</a><a href="#building">Four circles</a><a href="#programmes">Seven ways in</a><a href="#plans">Plans</a><a href="#results">Reviews</a><a href="#faq">FAQ</a></div>
+        </nav>
+        <div>
+          <span class="k mono">Visit</span>
+          <p id="footAddr"></p>
+          <p id="footHours"></p>
+        </div>
+        <div>
+          <span class="k mono">Talk to us</span>
+          <a id="fCall" href="#"></a>
+          <a id="fWa" href="#" target="_blank" rel="noopener"></a>
+          <a id="fMail" href="#"></a>
+          <a id="fIg" href="#" target="_blank" rel="noopener">Instagram</a>
+          <a id="fFb" href="#" target="_blank" rel="noopener">Facebook</a>
+        </div>
+      </div>
+      <div class="foot__base mono">
+        <span>© <span id="year">2026</span> IKIGAI Fitness Club · Jakhan, Dehradun</span>
+        <span>Direction C · “Find your Ikigai”: a design mockup for discussion. Every photo and clip is the club's own; items tagged Sample or To confirm are placeholders.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBILE QUICK BAR -->
+  <nav class="quickbar" id="quickbar" aria-label="Quick actions">
+    <a class="qb qb--book" href="#book" data-book="quickbar"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M8 3v4M16 3v4M4 10h16"/></svg><span>Book</span></a>
+    <a class="qb" id="qbWa" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 01-11.8 7L4 20l1.1-4A8 8 0 1120 12z"/><path d="M9 9.5c.3 1.8 1.9 3.9 4.5 4.8l1.2-1.1 1.8.8-.4 1.5c-3.6.2-7.3-3.4-7.5-7l1.5-.5.9 1.5z"/></svg><span>WhatsApp</span></a>
+    <a class="qb" id="qbCall" href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a1 1 0 01-1 1A16 16 0 014 5a1 1 0 011-1z"/></svg><span>Call</span></a>
+  </nav>
+
+  <!-- PROGRAMME SHEET -->
+  <div class="sheet" id="sheet" hidden>
+    <div class="sheet__scrim" data-close></div>
+    <div class="sheet__panel" role="dialog" aria-modal="true" aria-labelledby="sheetTitle" tabindex="-1">
+      <button class="sheet__close" type="button" data-close aria-label="Close">✕</button>
+      <div class="sheet__content" id="sheetContent"></div>
+    </div>
+  </div>
+
+  <!-- VIDEO MODAL -->
+  <div class="vmodal" id="vmodal" hidden>
+    <div class="vmodal__scrim" data-close></div>
+    <div class="vmodal__panel" role="dialog" aria-modal="true" aria-labelledby="vTitle" tabindex="-1">
+      <button class="vmodal__close" type="button" data-close aria-label="Close video">✕</button>
+      <video id="vPlayer" controls playsinline preload="none"></video>
+      <div class="vmodal__cap"><b id="vTitle"></b><small class="mono" id="vSub"></small></div>
+    </div>
+  </div>
+
+  <div class="toast mono" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="../../shared/data.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <!-- Native scrolling on purpose: a JS smooth-scroll library judders on high-refresh / large monitors -->
+  <script src="motion.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

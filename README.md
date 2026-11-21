@@ -1,69 +1,43 @@
-# Fitness Solutions: website design directions
+# IKIGAI Fitness Club: website design directions
 
-These are three working, animated website mockups for **Fitness Solutions** (Laxman Chowk, Dehradun, "A Complete Fitness Academy", est. 2009), made for the client to review and choose from. They are front end only, but every link and button works. They follow the IdeasSPORTS mockup approach: a chooser page and three story-led directions that share one data file.
+Three working, animated website mockups for **IKIGAI Fitness Club** (Doon Zone Tower, Jakhan, Rajpur Road, Dehradun), made for the client to review and choose from. They are front end only, but every link and button works. Each direction tells the club's concept, **“Four circles, one reason: find your reason to move”**, in a different way, with Japanese accents (生き甲斐 and others) set beside the English.
 
 ## What's here
 
 | Path | What it is |
 |---|---|
 | `mockups/index.html` | Chooser page the client opens first: the three directions, what we found, and what to confirm |
-| `mockups/website/a-lights-on/` | **A · Lights On.** Cinematic neon: hexagon-lamp hero, elevator through the four floors, live timetable |
-| `mockups/website/b-academy/` | **B · The Academy.** A 2026–27 prospectus: admit-card admission form, course catalogue, yearbook history, EN / हिं |
-| `mockups/website/c-solutions/` | **C · Fitness, Solved.** Interactive consultation: solution engine, know-your-numbers calculator, 3D building |
-| `mockups/shared/data.js` | Every fact, price, class and review in one place. All three directions render from it |
-| `mockups/shared/img`, `video`, `brand` | Curated photos (79), video loops (11, plus the film and a testimonial), and recolourable logo masks |
-| `research/research-notes.md` | Research on the gym (website, 2017 archive, Justdial, FITPASS, Instagram, Facebook, competitors) with sources |
-| `research/directions.md` | Brief and spec for each direction |
+| [ikigai-gym.vercel.app](https://ikigai-gym.vercel.app/) | **A · Ikigai Gym (生き甲斐).** The full live site (source: `Desktop\IKIGAI_GYM`): ikigai philosophy, programs, Boxing Club, Restore, coaches, tribe, reviews, plans and a WhatsApp free-trial pass |
+| `mockups/website/c-ikigai/` | **B · Find your Ikigai (生き甲斐).** Interactive: the finder turns your goal into a circle and a week, plus a numbers calculator, an isometric stack of the four circles and a plan calculator |
+| `mockups/website/a-akari/` | **C · Akari (灯).** Cinematic: the floor lights up, the wall slogan lights word by word, a lift ride through the four circles, a live timetable and a Boxing Club section |
+| `mockups/shared/data.js` | Every fact, price, class and review theme in one place (`window.IK`). Each fact has a `confirm` / `sample` flag, and all three directions render from it |
+| `mockups/shared/img`, `video`, `brand` | The club's own photos and clips (built by `tools/media/build_ikigai.sh`) and a **stand-in** logo |
+| `research/ikigai-brief.md` | The project brief: confirmed facts, what to confirm, positioning, the four-circle concept, open questions |
+| `research/directions.md` | What each direction does, section by section, and where every image comes from |
 | `tools/` | QA (Playwright), media pipeline and deploy script. See `tools/README.md` |
-| `_source/` | Curated originals from the client's Google Drive (not deployed) |
+
+## Ground rules followed
+- No invented prices, trainer names, reviews or timetables are presented as real. Unknown prices show “Call for price”. The timetable is tagged **Sample**. Review themes are paraphrased and not quoted. Coaches other than Coach Arun are shown as roles, “name to confirm”.
+- Japanese words are accents only and always appear beside the English.
+- Brand cues kept from the club: black, white and the hexagon pattern, plus the four-circle sign on the door. Accent colours: ember `#FF5A1F` and hanko red `#D7261E`.
 
 ## Preview locally
 
-Use a local web server. Opening the files directly (`file://`) blocks the CSS logo masks, so the logos would disappear.
+Use a local web server, not `file://` (the CSS logo masks don't load from `file://`).
 
 ```bash
-cd "/Volumes/HP P900/Fitness Studio/mockups" && python3 -m http.server 8080
-# then open http://localhost:8080
+cd mockups && npx serve .        # or: python -m http.server 8080
 ```
-
-## Deploy to Vercel (free Hobby plan)
-
-```bash
-npx vercel login                      # once
-cd "/Volumes/HP P900/Fitness Studio/tools"
-bash deploy/deploy.sh                 # first deploy prints the URL
-SITE_URL=https://<project>.vercel.app bash deploy/deploy.sh   # redeploy with WhatsApp/LinkedIn link previews
-```
-
-The script:
-- Deploys from a clean copy, leaving out the exFAT `._*` files (~53 MB).
-- Adds `noindex` headers and a robots.txt so the demo stays out of Google.
-- Remembers the Vercel project, so later runs update the same URL.
 
 ## QA
 
-From `tools/`:
+From `tools/` (`npm install` once):
 
 | Command | What it does |
 |---|---|
-| `npm run check` | Checks links, console errors and overflow |
+| `npm run check` | Links, console errors and overflow at 360 / 1440 / 2560 |
 | `npm run interact` | Clicks every control |
-| `node qa/resp.mjs <page> <out>` | Sweeps 15 devices: phones, tablets in portrait and landscape, and desktops up to 4K |
+| `node qa/sections.mjs <page> <out-dir> [w] [h]` | One screenshot per section |
 
 ## Before the full build
-
-Confirm the items on the chooser's "Please confirm" list:
-- Hours
-- Founding year
-- Which zone is on which floor
-- Timetable
-- Which phone number to publish
-- Instagram handle
-- Les Mills licence
-- Director credentials
-- What membership includes
-- Permission to show member results and the testimonial
-
-We also need these from the client:
-- A vector logo
-- Team photos
+Ask the client for the items on the chooser's “Please confirm” list: logo file, Sunday hours and the WhatsApp number, full prices including PT, the timetable, coach names and photos, women-only batches and trial policy, event dates, consent for transformations. Also ask for better photos of the steam room, washrooms, yoga and the team.

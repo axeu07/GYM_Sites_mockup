@@ -1,0 +1,623 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IKIGAI Fitness Club · The Dojo · Gym in Jakhan, Rajpur Road, Dehradun</title>
+  <meta name="description" content="IKIGAI Fitness Club, Jakhan, Rajpur Road, Dehradun: the dojo handbook. Seven ways to train, the Ikigai Boxing Club, steam and recovery, plans and a free trial." />
+  <meta name="keywords" content="gym in Jakhan, gym Rajpur Road Dehradun, boxing Dehradun, steam gym Dehradun, women-friendly gym Dehradun" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="theme-color" content="#F2EEE6" />
+  <link rel="icon" href="../../shared/brand/favicon-32.png" type="image/png" />
+  <link rel="apple-touch-icon" href="../../shared/brand/favicon-180.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Kalam:wght@400;700&family=Instrument+Sans:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Sans+Devanagari:wght@400;500;600&family=Tiro+Devanagari+Hindi:ital@0;1&family=Noto+Serif+JP:wght@500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- The stamp intro plays on every visit. -->
+  <script>try { var l = localStorage.getItem("ik-lang-b"); if (l === "hi") document.documentElement.lang = "hi"; } catch (e) {}</script>
+</head>
+<body>
+  <!-- Loader: the hanko seal is stamped onto the handbook -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <svg class="seal seal--loader" viewBox="0 0 200 200"><use href="#sealArt" /></svg>
+      <p class="loader__line">道場 Dojo handbook <span>·</span> Dehradun</p>
+    </div>
+  </div>
+
+  <!-- Seal artwork, reused by the loader, the cover and the colophon -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <path id="sealPath" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0" />
+      <filter id="inkWorn" x="-5%" y="-5%" width="110%" height="110%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="n" />
+        <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -4 0 0 0 3.3" result="speckle" />
+        <feComposite in="SourceGraphic" in2="speckle" operator="in" result="worn" />
+        <feDisplacementMap in="worn" in2="n" scale="1.4" xChannelSelector="R" yChannelSelector="G" />
+      </filter>
+      <symbol id="sealArt" viewBox="0 0 200 200">
+        <g filter="url(#inkWorn)" fill="currentColor">
+          <circle cx="100" cy="100" r="96" fill="none" stroke="currentColor" stroke-width="3" />
+          <circle cx="100" cy="100" r="90" fill="none" stroke="currentColor" stroke-width="1" />
+          <circle cx="100" cy="100" r="62" fill="none" stroke="currentColor" stroke-width="1.6" />
+          <text font-family="Anton, sans-serif" font-size="12.4" letter-spacing="2.6"><textPath href="#sealPath" startOffset="0">IKIGAI FITNESS CLUB · FIND YOUR REASON TO MOVE · DEHRADUN ·</textPath></text>
+          <!-- hanko: 生き / 甲斐 set in a 2 × 2 block, like a name seal -->
+          <rect x="62" y="62" width="76" height="76" rx="5" fill="none" stroke="currentColor" stroke-width="2.4" />
+          <text x="81" y="96" text-anchor="middle" font-family="'Noto Serif JP', serif" font-weight="900" font-size="30">生</text>
+          <text x="119" y="96" text-anchor="middle" font-family="'Noto Serif JP', serif" font-weight="900" font-size="30">き</text>
+          <text x="81" y="131" text-anchor="middle" font-family="'Noto Serif JP', serif" font-weight="900" font-size="30">甲</text>
+          <text x="119" y="131" text-anchor="middle" font-family="'Noto Serif JP', serif" font-weight="900" font-size="30">斐</text>
+        </g>
+      </symbol>
+      <symbol id="stampAdmitted" viewBox="0 0 320 110">
+        <g filter="url(#inkWorn)" fill="none" stroke="currentColor">
+          <rect x="6" y="6" width="308" height="98" rx="10" stroke-width="5" />
+          <rect x="16" y="16" width="288" height="78" rx="6" stroke-width="2" />
+        </g>
+      </symbol>
+    </defs>
+  </svg>
+
+  <!-- NAV + running head -->
+  <header class="nav" id="nav">
+    <div class="nav__bar wrap">
+      <a class="brand" href="#top" aria-label="IKIGAI Fitness Club — back to the cover">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__text">
+          <span class="brand__word" aria-hidden="true"></span>
+          <span class="brand__tag" data-i18n="brand.tag">Find your reason to move</span>
+        </span>
+      </a>
+      <nav class="nav__links" aria-label="Chapters">
+        <a href="#history" data-i18n="nav.history">A day</a>
+        <a href="#curriculum" data-i18n="nav.curriculum">Classes</a>
+        <a href="#faculty" data-i18n="nav.faculty">Coaches</a>
+        <a href="#campus" data-i18n="nav.campus">Four circles</a>
+        <a href="#fees" data-i18n="nav.fees">Plans</a>
+      </nav>
+      <div class="nav__right">
+        <div class="lang" role="group" aria-label="Language">
+          <button type="button" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" data-lang="hi" aria-pressed="false" lang="hi">हिं</button>
+        </div>
+        <a class="btn btn--ink btn--sm nav__apply" href="#apply" data-i18n="nav.apply">Free trial</a>
+        <button class="burger" id="burger" type="button" aria-label="Open contents" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+      </div>
+    </div>
+    <div class="runhead">
+      <div class="wrap runhead__row">
+        <a class="pill-back" href="../../index.html">← All directions</a>
+        <span class="runhead__title" aria-hidden="true" data-i18n="cover.prospectus">道場 Dojo handbook 2026</span>
+        <span class="runhead__chapter" id="runChapter" aria-hidden="true">Cover</span>
+        <span class="runhead__folio" id="runFolio" aria-hidden="true">p. 01</span>
+      </div>
+      <i class="runhead__progress" id="runProgress"></i>
+    </div>
+  </header>
+
+  <!-- Mobile contents overlay -->
+  <div class="menu" id="menu" hidden>
+    <div class="menu__inner wrap">
+      <p class="menu__label" data-i18n="toc.title">Contents</p>
+      <ol class="toc toc--menu" id="menuToc"></ol>
+      <div class="menu__foot">
+        <a class="btn btn--ink" href="#apply" data-i18n="cta.apply">Book a free trial</a>
+        <a class="btn btn--line" id="menuCall" href="#">Call the front desk</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Desktop side contents rail -->
+  <nav class="rail" id="rail" aria-label="Contents"></nav>
+
+  <main id="main">
+    <!-- ============ COVER ============ -->
+    <section class="cover" id="top" data-chapter="cover">
+      <div class="wrap">
+        <div class="cover__strip">
+          <span data-i18n="cover.prospectus">道場 Dojo handbook 2026</span>
+          <span class="cover__vol" id="coverVol">Vol. I</span>
+          <span data-i18n="cover.place">Jakhan, Rajpur Road, Dehradun</span>
+        </div>
+
+        <div class="cover__grid">
+          <div class="cover__copy">
+            <p class="kicker" id="coverKicker"><span class="kicker__jp" aria-hidden="true">始め</span> <span data-i18n="brand.tag">Find your reason to move</span> · <span data-i18n="cover.est">Unisex · women-friendly</span></p>
+            <h1 class="cover__title"><span class="cover__line" data-i18n="hero.title1">Find your</span> <span class="cover__line" data-i18n="hero.title2"><em class="hl hl--draw">Ikigai.</em></span></h1>
+            <p class="cover__deck" id="coverDeck" data-i18n="hero.deck">Find your reason to move.</p>
+            <p class="cover__lede" data-i18n="hero.lede">Strength, cardio, boxing, dance, yoga and recovery under one roof. A unisex, women-friendly gym with a community that keeps you coming back. Your first day is on us.</p>
+            <div class="cover__ctas">
+              <a class="btn btn--ink" href="#apply"><span data-i18n="cta.apply">Book a free trial</span> <span aria-hidden="true">→</span></a>
+              <a class="btn btn--line" id="coverWa" href="#" target="_blank" rel="noopener"><span data-i18n="cta.wa">WhatsApp us</span></a>
+              <button class="btn btn--text" type="button" data-open-tour><span data-i18n="cta.tour">Come and see it</span></button>
+            </div>
+            <p class="mnote mnote--cover" aria-hidden="true"><svg class="mnote__arrow" viewBox="0 0 120 64" aria-hidden="true"><path pathLength="1" d="M112 56 C 96 28, 66 12, 22 14" /><path pathLength="1" d="M36 4 L 20 14 L 34 26" /></svg><span class="mnote__t" data-i18n="mn.cover">your first day is on us!</span></p>
+            <p class="cover__status"><span class="dot" id="coverDot"></span><span id="coverStatus">—</span> <span class="tag tag--confirm" data-i18n="tag.confirm">To confirm</span></p>
+          </div>
+
+          <figure class="cover__plate">
+            <div class="arch">
+              <video class="arch__media" id="coverVideo" muted playsinline loop preload="metadata" aria-label="Members dancing in a class in the Ikigai studio"></video>
+            </div>
+            <figcaption class="plate-cap"><span class="plate-cap__n" data-pn="I">Plate I.</span> <span data-i18n="cover.cap">A dance class in the Ikigai studio.</span></figcaption>
+            <div class="cover__seal" aria-hidden="true">
+              <i class="ink-ring"></i>
+              <svg class="seal" id="coverSeal" viewBox="0 0 200 200"><use href="#sealArt" /></svg>
+            </div>
+          </figure>
+        </div>
+
+        <div class="cover__contents">
+          <p class="cover__contents-h" data-i18n="toc.inside">Inside this prospectus</p>
+          <ol class="toc toc--cover" id="coverToc"></ol>
+        </div>
+      </div>
+      <a class="curl" href="#note" aria-label="Turn the page to chapter I"><span class="curl__under" aria-hidden="true"></span><span class="curl__fold" aria-hidden="true"></span><span class="curl__t" data-i18n="curl">Turn the page</span></a>
+    </section>
+
+    <!-- ============ NEWSPRINT TICKER (speed follows scroll) ============ -->
+    <div class="ticker" id="ticker" role="region" aria-label="News from the club">
+      <div class="ticker__track" id="tickerTrack"></div>
+    </div>
+
+    <!-- ============ I. PRINCIPAL'S NOTE ============ -->
+    <section class="chapter note" id="note" data-chapter="note">
+      <div class="wrap">
+        <header class="ch-head">
+          <span class="ch-num" aria-hidden="true">I</span>
+          <div class="ch-head__text">
+            <p class="ch-kicker" data-i18n="ch.note">入門 · Before you begin</p>
+            <h2 class="ch-title reveal" data-i18n="h.note">A letter <em>to the new member.</em></h2>
+          </div>
+        </header>
+
+        <div class="note__grid">
+          <article class="letter reveal">
+            <p class="letter__date" id="letterDate">Jakhan, Dehradun</p>
+            <p class="letter__salute">Dear future member,</p>
+            <p class="letter__p dropcap"><span class="hl">Ikigai (生き甲斐) is Japanese for “a reason for being”.</span> <i>Iki</i> means life and <i>gai</i> means worth. It sits where <span class="ring">four circles<svg class="ring__svg" viewBox="0 0 100 50" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M58 6 C 30 2, 4 12, 6 28 C 8 44, 52 48, 80 40 C 102 33, 98 10, 70 6 C 60 5, 50 7, 44 9" /></svg></span> overlap: what you love, what you're good at, what the world needs and what you need.</p>
+            <p class="mnote mnote--letter" aria-hidden="true"><svg class="mnote__arrow mnote__arrow--up" viewBox="0 0 80 70" aria-hidden="true"><path pathLength="1" d="M70 62 C 40 64, 18 46, 24 10" /><path pathLength="1" d="M12 22 L 24 8 L 36 22" /></svg><span class="mnote__t" data-i18n="mn.letter">that's the whole idea</span></p>
+            <p class="letter__p">We built the club the same way. Joy is the studio: Zumba, Bhangra and yoga. Power is the floor: racks, plates, air bikes and a boxing club of its own. Tribe is the people: Morning Grind sessions and treks into the hills. Restore is the steam room, the showers and the cafeteria.</p>
+            <p class="letter__p">There's a line painted on our wall: <span class="hl">this place will change you, if you let it.</span> Nobody here expects a six-week miracle. Come a little more often, lift a little better, and keep coming back.</p>
+            <p class="letter__p">Come and see it. Your first day is on us.</p>
+            <div class="letter__sign">
+              <span class="letter__sig">The Ikigai team</span>
+              <svg class="letter__swash" viewBox="0 0 300 40" aria-hidden="true"><path d="M4 30 C 60 6, 120 38, 180 18 S 270 8, 296 22" /></svg>
+              <span class="letter__role">IKIGAI Fitness Club · Jakhan, Dehradun</span>
+            </div>
+            <span class="tag tag--sample letter__tag" data-i18n="tag.adapted">Sample · written for the mockup from the club's own words</span>
+          </article>
+
+          <aside class="almanac reveal" aria-label="The club at a glance">
+            <p class="almanac__h" data-i18n="alm.h">The club at a glance</p>
+            <dl class="almanac__facts" id="facts"></dl>
+            <div class="almanac__block">
+              <p class="almanac__label" data-i18n="alm.kit">On the floor</p>
+              <p class="almanac__kit" id="kit"></p>
+            </div>
+            <div class="almanac__block">
+              <p class="almanac__label" data-i18n="alm.rated">Rated by members</p>
+              <ul class="almanac__ratings" id="ratings"></ul>
+            </div>
+            <figure class="almanac__fig">
+              <img src="../../shared/img/exterior-sm.jpg" alt="Doon Zone Tower at night, with the lit IKIGAI Fitness Club sign on the first floor" loading="lazy" width="763" height="800" />
+              <figcaption class="plate-cap"><span class="plate-cap__n" data-pn="II">Plate II.</span> <span data-i18n="alm.cap">Doon Zone Tower at night. Ikigai is on the first floor.</span></figcaption>
+            </figure>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ II. HISTORY / YEARBOOK ============ -->
+    <section class="chapter history" id="history" data-chapter="history">
+      <div class="wrap">
+        <header class="ch-head">
+          <span class="ch-num" aria-hidden="true">II</span>
+          <div class="ch-head__text">
+            <p class="ch-kicker" data-i18n="ch.history">一日 · A day at Ikigai</p>
+            <h2 class="ch-title reveal" data-i18n="h.history">Six to ten, <em>five chapters.</em></h2>
+          </div>
+          <p class="ch-intro reveal"><span data-i18n="i.history">From the first rep at six to <span class="hl">the steam room at night</span>, a day at the club, page by page.</span> <span class="tag tag--sample" data-i18n="tag.sample">Sample</span></p>
+        </header>
+      </div>
+      <div class="yb" id="yearbook">
+        <div class="yb__track" id="ybTrack"></div>
+        <div class="yb__hud wrap">
+          <span class="yb__count" id="ybCount">Chapter 1 of 5</span>
+          <span class="yb__bar"><i id="ybBar"></i></span>
+          <span class="yb__hint" data-i18n="yb.hint">Scroll to turn the page →</span>
+          <span class="yb__arrows">
+            <button type="button" class="yb__arrow" id="ybPrev" aria-label="Previous page">←</button>
+            <button type="button" class="yb__arrow" id="ybNext" aria-label="Next page">→</button>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ III. CURRICULUM ============ -->
+    <section class="chapter curriculum" id="curriculum" data-chapter="curriculum">
+      <div class="wrap">
+        <header class="ch-head">
+          <span class="ch-num" aria-hidden="true">III</span>
+          <div class="ch-head__text">
+            <p class="ch-kicker" data-i18n="ch.curriculum">道 · Michi, the way in</p>
+            <h2 class="ch-title reveal" data-i18n="h.curriculum">Seven ways in. <em>One reason.</em></h2>
+          </div>
+          <p class="ch-intro reveal" data-i18n="i.curriculum">Pick a goal or a format, open a class for its <span class="hl">four-week syllabus</span>, then try it free.</p>
+        </header>
+
+        <div class="catalog">
+          <div class="catalog__filters" role="group" aria-label="Filter courses">
+            <div class="filter" role="group" aria-label="Goal">
+              <span class="filter__label" data-i18n="f.goal">Goal</span>
+              <div class="filter__chips" id="goalChips"></div>
+            </div>
+            <div class="filter" role="group" aria-label="Format">
+              <span class="filter__label" data-i18n="f.format">Format</span>
+              <div class="filter__chips" id="formatChips"></div>
+            </div>
+            <p class="catalog__count" id="courseCount" aria-live="polite"></p>
+            <p class="mnote mnote--cat" aria-hidden="true"><span class="mnote__t" data-i18n="mn.cat">our boxing club</span><svg class="mnote__arrow mnote__arrow--down" viewBox="0 0 80 70" aria-hidden="true"><path pathLength="1" d="M10 8 C 40 6, 62 22, 56 60" /><path pathLength="1" d="M44 50 L 56 62 L 66 48" /></svg></p>
+          </div>
+          <div class="catalog__head" aria-hidden="true">
+            <span data-i18n="c.code">No.</span><span data-i18n="c.course">Class</span><span class="catalog__brief" data-i18n="c.brief">In brief</span><span data-i18n="c.format">Format</span><span data-i18n="c.credits">Credits / wk</span><span data-i18n="c.intensity">Intensity</span><span></span>
+          </div>
+          <ol class="catalog__list" id="courses"></ol>
+          <p class="catalog__note"><span class="tag tag--sample" data-i18n="tag.sample">Sample</span> <span data-i18n="c.note">Syllabi and schedules are samples until the club confirms its timetable.</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ IV. FACULTY ============ -->
+    <section class="chapter faculty" id="faculty" data-chapter="faculty">
+      <div class="wrap">
+        <header class="ch-head">
+          <span class="ch-num" aria-hidden="true">IV</span>
+          <div class="ch-head__text">
+            <p class="ch-kicker" data-i18n="ch.faculty">先生 · Sensei</p>
+            <h2 class="ch-title reveal" data-i18n="h.faculty">Coaches <em>who know your name.</em></h2>
+          </div>
+          <p class="ch-intro reveal" data-i18n="i.faculty"><span class="hl">Reviewers praise the trainers more than anything else:</span> friendly, qualified and watching your form. Names and portraits come from the club.</p>
+        </header>
+        <p class="mnote mnote--fac" aria-hidden="true"><span class="mnote__t" data-i18n="mn.fac">what members praise most</span><svg class="mnote__arrow mnote__arrow--down" viewBox="0 0 80 70" aria-hidden="true"><path pathLength="1" d="M10 8 C 40 6, 62 22, 56 60" /><path pathLength="1" d="M44 50 L 56 62 L 66 48" /></svg></p>
+        <div class="cards" id="faculty-cards"></div>
+        <div class="atwork">
+          <p class="atwork__h" data-i18n="fac.atwork">On the floor</p>
+          <div class="atwork__row" id="atwork"></div>
+          <p class="atwork__note"><span class="tag tag--sample" data-i18n="tag.portraits">Portraits to come</span> <span data-i18n="fac.note">Coach portraits will be photographed for the full site. Floor photos stand in until then.</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ V. CAMPUS ============ -->
+    <section class="chapter campus" id="campus" data-chapter="campus">
+      <div class="wrap">
+        <header class="ch-head">
+          <span class="ch-num" aria-hidden="true">V</span>
+          <div class="ch-head__text">
+            <p class="ch-kicker" data-i18n="ch.campus">生き甲斐 · The four circles</p>
+            <h2 class="ch-title reveal" data-i18n="h.campus">Four circles. <em>One reason.</em></h2>
+          </div>
+          <p class="ch-intro reveal" data-i18n="i.campus">Ikigai sits where four circles overlap: what you love, what you're good at, what the world needs and what you need. Choose a circle to walk into it.</p>
+        </header>
+
+        <div class="campus__grid">
+          <figure class="drawing reveal" aria-label="The ikigai diagram: four overlapping circles">
+            <svg id="sectionSvg" viewBox="0 0 664 720" role="group" aria-label="The four circles: choose one"></svg>
+            <figcaption class="drawing__block">
+              <span>生き甲斐</span><span>IKIGAI Fitness Club · one floor, four worlds</span><span>Choose a circle</span>
+            </figcaption>
+          </figure>
+
+          <div class="floorpanel" id="floorPanel" aria-live="polite">
+            <div class="floorpanel__tabs" role="tablist" aria-label="Circles" id="floorTabs"></div>
+            <div class="floorpanel__body" id="floorBody"></div>
+          </div>
+        </div>
+
+        <div class="essay">
+          <p class="essay__h"><span data-i18n="essay.h">A walk through the club</span> <span class="essay__count" id="essayCount"></span></p>
+          <div class="essay__grid" id="essay"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ VI. ALUMNI ============ -->
+    <section class="chapter alumni" id="alumni" data-chapter="alumni">
+      <div class="wrap">
+        <header class="ch-head">
+          <span class="ch-num" aria-hidden="true">VI</span>
+          <div class="ch-head__text">
+            <p class="ch-kicker" data-i18n="ch.alumni">改善 · Kaizen</p>
+            <h2 class="ch-title reveal" data-i18n="h.alumni">Small steps. <em>Real results.</em></h2>
+          </div>
+          <p class="ch-intro reveal" data-i18n="i.alumni"><span class="hl">Four things reviewers say again and again</span>, in our words, not theirs. Plus the club's notice board.</p>
+        </header>
+
+        <div class="reports" id="reports"></div>
+        <p class="reports__note"><span class="tag tag--confirm" data-i18n="tag.confirm">To confirm</span> <span data-i18n="alu.note">Themes paraphrased from Google and Justdial reviews. Before-and-after stories will follow once members consent.</span></p>
+
+        <div class="alumni__lower">
+          <div class="letters" id="letters"></div>
+          <aside class="voices">
+            <p class="voices__h" data-i18n="alu.voices">A day at Ikigai</p>
+            <button class="voices__arch" type="button" id="voicePlay" aria-label="Play the Zumba clip with sound (20 seconds)">
+              <img src="../../shared/img/zumba-class-sm.jpg" alt="" loading="lazy" width="450" height="800" />
+              <span class="voices__play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg></span>
+            </button>
+            <p class="voices__cap"><span data-i18n="alu.voicecap">Zumba, with sound.</span> <span class="voices__meta">“Just another day at Ikigai” · 0:20</span></p>
+            <p class="voices__rate" id="voiceRate"></p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ VII. FEES ============ -->
+    <section class="chapter fees" id="fees" data-chapter="fees">
+      <div class="wrap">
+        <header class="ch-head">
+          <span class="ch-num" aria-hidden="true">VII</span>
+          <div class="ch-head__text">
+            <p class="ch-kicker" data-i18n="ch.fees">約束 · Yakusoku</p>
+            <h2 class="ch-title reveal" data-i18n="h.fees">A promise <em>to yourself.</em></h2>
+          </div>
+          <p class="ch-intro reveal" data-i18n="i.fees">Premium gym, local price. <span class="hl">The longer you commit, the less each day costs.</span></p>
+        </header>
+
+        <div class="feebook reveal">
+          <table class="feetable" id="feeTable">
+            <caption class="visually-hidden">Membership plans</caption>
+            <thead>
+              <tr><th scope="col" data-i18n="fee.duration">Duration</th><th scope="col" data-i18n="fee.fee">Fee</th><th scope="col" data-i18n="fee.month">Per month</th><th scope="col" data-i18n="fee.day">Per day</th><th scope="col"><span class="visually-hidden">Choose</span></th></tr>
+            </thead>
+            <tbody id="feeRows"></tbody>
+          </table>
+          <template id="mnFeesTpl"><p class="mnote mnote--fees" aria-hidden="true"><svg class="mnote__arrow mnote__arrow--up" viewBox="0 0 80 100" aria-hidden="true"><path pathLength="1" d="M70 92 C 40 95, 16 66, 24 10" /><path pathLength="1" d="M12 22 L 24 8 L 36 22" /></svg><span class="mnote__t" data-i18n="mn.fees" id="mnFees">just ₹49 a day!</span></p></template>
+          <div class="feebook__side">
+            <p class="feebook__h" data-i18n="fee.includes">Membership includes</p>
+            <ul class="ticks" id="includes"></ul>
+            <span class="tag tag--sample" data-i18n="tag.sample">Sample</span>
+          </div>
+        </div>
+        <ol class="footnotes">
+          <li data-i18n="fee.fn1">₹8,000 / 6 months and ₹12,000 / 12 months as seen in the club's reels (may be offers). Ask for the other prices.</li>
+          <li><span data-i18n="fee.fn2">GST as applicable. Personal training is priced separately.</span> <span class="tag tag--confirm" data-i18n="tag.confirm">To confirm</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ VIII. APPLY ============ -->
+    <section class="chapter apply" id="apply" data-chapter="apply">
+      <div class="wrap">
+        <header class="ch-head">
+          <span class="ch-num" aria-hidden="true">VIII</span>
+          <div class="ch-head__text">
+            <p class="ch-kicker" data-i18n="ch.apply">入門 · Free trial</p>
+            <h2 class="ch-title reveal" data-i18n="h.apply">Your first day <em>is on us.</em></h2>
+          </div>
+          <p class="ch-intro reveal"><span data-i18n="i.apply">Fill in the form and <span class="hl">watch your trial pass write itself.</span> Bring it, or just your name, to the front desk.</span> <span class="tag tag--confirm" data-i18n="tag.confirm">To confirm</span></p>
+        </header>
+
+        <div class="apply__grid">
+          <form class="admission" id="admission" novalidate>
+            <p class="admission__h"><span data-i18n="form.h">Free trial</span><span class="admission__no">入門 · Form 1</span></p>
+            <p class="mnote mnote--apply" aria-hidden="true"><span class="mnote__t" data-i18n="mn.apply">one minute · no payment</span></p>
+            <div class="field">
+              <label for="fName"><span class="field__n">1</span><span data-i18n="form.name">Full name</span></label>
+              <input id="fName" name="name" type="text" autocomplete="name" placeholder="e.g. Ananya Negi" required />
+              <p class="field__err" id="fNameErr"></p>
+            </div>
+            <div class="field">
+              <label for="fPhone"><span class="field__n">2</span><span data-i18n="form.phone">Mobile number</span></label>
+              <div class="field__phone"><span>+91</span><input id="fPhone" name="phone" type="tel" inputmode="numeric" autocomplete="tel-national" placeholder="98765 43210" required /></div>
+              <p class="field__err" id="fPhoneErr"></p>
+            </div>
+            <div class="field field--half">
+              <label for="fAge"><span class="field__n">3</span><span data-i18n="form.age">Age group</span></label>
+              <select id="fAge" name="age">
+                <option>18–29</option><option>30–44</option><option>45–59</option><option>60+</option><option>Under 18</option>
+              </select>
+            </div>
+            <div class="field field--half">
+              <label for="fPlan"><span class="field__n">4</span><span data-i18n="form.plan">Membership (optional)</span></label>
+              <select id="fPlan" name="plan"></select>
+            </div>
+            <div class="field">
+              <label for="fCourse"><span class="field__n">5</span><span data-i18n="form.course">Class</span></label>
+              <select id="fCourse" name="course"></select>
+            </div>
+            <fieldset class="field">
+              <legend><span class="field__n">6</span><span data-i18n="form.batch">Batch</span></legend>
+              <div class="chips" id="batchChips"></div>
+            </fieldset>
+            <fieldset class="field">
+              <legend><span class="field__n">7</span><span data-i18n="form.date">Start date</span></legend>
+              <div class="chips" id="dateChips"></div>
+            </fieldset>
+            <div class="admission__submit">
+              <button class="btn btn--hanko" type="submit"><span data-i18n="form.submit">Issue my trial pass</span> <span aria-hidden="true">→</span></button>
+              <p class="admission__status" id="formStatus" aria-live="polite"></p>
+            </div>
+          </form>
+
+          <div class="cardwrap">
+            <div class="admit" id="admitCard" aria-live="polite" aria-label="Your trial pass preview">
+              <div class="admit__band">
+                <span class="admit__mark" aria-hidden="true"></span>
+                <span class="admit__org"><b>IKIGAI Fitness Club</b><small data-i18n="brand.tag">Find your reason to move</small></span>
+                <span class="admit__kind"><b><span class="admit__jp" aria-hidden="true">入門</span> <span data-i18n="card.title">Trial pass</span></b><small data-i18n="card.valid">First day free</small></span>
+              </div>
+              <div class="admit__body">
+                <div class="admit__photo"><span id="cInitials">生</span><small data-i18n="card.photo">Photo at desk</small></div>
+                <dl class="admit__fields">
+                  <div class="admit__wide"><dt data-i18n="card.name">Name</dt><dd id="cName" class="is-empty">Your name</dd></div>
+                  <div class="admit__wide"><dt data-i18n="card.course">Class</dt><dd id="cCourse">—</dd></div>
+                  <div><dt data-i18n="card.batch">Batch</dt><dd id="cBatch">—</dd></div>
+                  <div><dt data-i18n="card.date">Date &amp; time</dt><dd id="cDate">—</dd></div>
+                  <div><dt data-i18n="card.no">Pass No.</dt><dd id="cNo" class="mono">IKG/26/····</dd></div>
+                  <div><dt data-i18n="card.plan">Membership</dt><dd id="cPlan">—</dd></div>
+                </dl>
+              </div>
+              <div class="admit__foot">
+                <svg class="admit__barcode" id="cBarcode" viewBox="0 0 200 36" preserveAspectRatio="none" aria-hidden="true"></svg>
+                <p class="admit__where" data-i18n="card.where">Show at the front desk · 138/345, First Floor, Doon Zone Tower, Jakhan</p>
+              </div>
+              <div class="admit__stamp" id="cStamp" aria-hidden="true">
+                <i class="ink-ring ink-ring--wide"></i>
+                <svg viewBox="0 0 320 110"><use href="#stampAdmitted" /></svg>
+                <span><span class="admit__stampjp" aria-hidden="true">歓迎</span> <span data-i18n="card.admitted">Welcome</span></span>
+              </div>
+            </div>
+            <div class="admit__actions" id="cardActions" hidden>
+              <button class="btn btn--ink btn--sm" type="button" id="cPrint"><span data-i18n="card.print">Print / Save as PDF</span></button>
+              <a class="btn btn--line btn--sm" id="cWa" href="#" target="_blank" rel="noopener"><span data-i18n="card.wa">Send on WhatsApp</span></a>
+              <button class="btn btn--line btn--sm" type="button" id="cCal"><span data-i18n="card.cal">Add to calendar</span></button>
+              <button class="btn btn--text btn--sm" type="button" id="cEdit"><span data-i18n="card.edit">Edit details</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ IX. VISITING ============ -->
+    <section class="chapter visit" id="visit" data-chapter="visit">
+      <div class="wrap">
+        <header class="ch-head">
+          <span class="ch-num" aria-hidden="true">IX</span>
+          <div class="ch-head__text">
+            <p class="ch-kicker" data-i18n="ch.visit">訪 · Visiting</p>
+            <h2 class="ch-title reveal" data-i18n="h.visit">Find us on <em>Rajpur Road.</em></h2>
+          </div>
+        </header>
+
+        <div class="visit__grid">
+          <div class="libcard reveal">
+            <div class="libcard__head"><span data-i18n="v.card">Address</span><span class="libcard__no">No. 248001</span></div>
+            <address class="libcard__addr" id="addr"></address>
+            <p class="libcard__status"><span class="dot" id="visitDot"></span><span id="visitStatus">—</span></p>
+            <table class="hours" id="hours"><caption class="visually-hidden">Opening hours</caption><tbody></tbody></table>
+            <p class="libcard__fine"><span class="tag tag--confirm" data-i18n="tag.confirm">To confirm</span> <span data-i18n="v.hoursnote">Sunday hours, and the rest, to be confirmed by the club.</span></p>
+            <div class="libcard__actions" id="visitActions"></div>
+          </div>
+          <figure class="mapframe reveal" id="mapFrame">
+            <div class="mapframe__inner">
+              <svg class="mapplate" viewBox="0 0 600 560" preserveAspectRatio="xMidYMid slice" role="img" aria-labelledby="mapPlateT" id="mapPlate"></svg>
+              <span class="mapframe__note" data-i18n="v.schem">Schematic · not to scale</span>
+            </div>
+            <figcaption class="mapframe__cap">
+              <span class="plate-cap"><span class="plate-cap__n">Map.</span> <span data-i18n="v.mapcap">Doon Zone Tower, Jakhan, Rajpur Road. On-site parking (to confirm).</span></span>
+              <a class="btn btn--line btn--sm" id="mapOpen" href="#" target="_blank" rel="noopener"><span data-i18n="v.openmap">Open in Google Maps ↗</span></a>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="faq">
+          <h3 class="faq__h"><span data-i18n="faq.h">Frequently asked questions</span> <span class="tag tag--confirm" data-i18n="tag.answers">Answers to confirm</span></h3>
+          <div class="faq__list" id="faq"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ COLOPHON ============ -->
+  <footer class="colophon">
+    <div class="wrap colophon__grid">
+      <div class="colophon__brand">
+        <svg class="seal seal--foot" viewBox="0 0 200 200" aria-hidden="true"><use href="#sealArt" /></svg>
+        <p class="colophon__line"><b>IKIGAI Fitness Club</b> · <span data-i18n="brand.tag">Find your reason to move</span>. <span data-i18n="foot.est">Jakhan, Rajpur Road, Dehradun.</span></p>
+        <p class="colophon__jp" aria-hidden="true">生き甲斐 · iki, life · gai, worth</p>
+      </div>
+      <nav class="colophon__col" aria-label="Contents">
+        <p class="colophon__h" data-i18n="toc.title">Contents</p>
+        <ol class="toc toc--foot" id="footToc"></ol>
+      </nav>
+      <div class="colophon__col">
+        <p class="colophon__h" data-i18n="foot.visit">Visit</p>
+        <p class="colophon__p" id="footAddr"></p>
+        <p class="colophon__p" id="footHours"></p>
+      </div>
+      <div class="colophon__col">
+        <p class="colophon__h" data-i18n="foot.contact">Contact</p>
+        <ul class="colophon__links" id="footContact"></ul>
+      </div>
+    </div>
+    <div class="wrap colophon__base">
+      <span>道場 Dojo handbook · Vol. <span id="footVol">I</span></span>
+      <span data-i18n="foot.mock">Design-direction mockup. Every photo and clip is the club's own. Items tagged “Sample” or “To confirm” are placeholders.</span>
+      <a href="../../index.html">← All directions</a>
+      <a href="#top" data-i18n="foot.top">Back to the cover ↑</a>
+    </div>
+  </footer>
+
+  <!-- Curriculum preview: a polaroid of the course follows the cursor (fine pointers only) -->
+  <div class="polaroid" id="polaroid" aria-hidden="true"><div class="polaroid__card"><img id="polImg" alt="" /><p class="polaroid__cap" id="polCap"></p></div></div>
+
+  <!-- ============ DIALOGS ============ -->
+  <dialog class="modal" id="tourModal" aria-labelledby="tourTitle">
+    <form class="modal__panel" id="tourForm" method="dialog" novalidate>
+      <button class="modal__x" type="button" data-close aria-label="Close">×</button>
+      <div class="modal__step" id="tourStep">
+        <p class="modal__kicker" data-i18n="tour.kicker">Come and see it</p>
+        <h3 class="modal__title" id="tourTitle" data-i18n="tour.title">See the whole club with a coach.</h3>
+        <p class="modal__lede" data-i18n="tour.lede">Thirty minutes, no pressure, no pitch. The floor, the boxing club, the studio and the steam room.</p>
+        <div class="field">
+          <label for="tName" data-i18n="form.name">Full name</label>
+          <input id="tName" type="text" autocomplete="name" required />
+          <p class="field__err" id="tNameErr"></p>
+        </div>
+        <div class="field">
+          <label for="tPhone" data-i18n="form.phone">Mobile number</label>
+          <div class="field__phone"><span>+91</span><input id="tPhone" type="tel" inputmode="numeric" autocomplete="tel-national" required /></div>
+          <p class="field__err" id="tPhoneErr"></p>
+        </div>
+        <fieldset class="field">
+          <legend data-i18n="tour.day">Day</legend>
+          <div class="chips" id="tourDays"></div>
+        </fieldset>
+        <fieldset class="field">
+          <legend data-i18n="tour.time">Time</legend>
+          <div class="chips" id="tourTimes"></div>
+        </fieldset>
+        <button class="btn btn--ink btn--block" type="submit"><span data-i18n="tour.submit">Book my visit</span> <span aria-hidden="true">→</span></button>
+      </div>
+      <div class="modal__done" id="tourDone" hidden>
+        <p class="modal__kicker" data-i18n="tour.booked">Visit booked</p>
+        <h3 class="modal__title" id="tourDoneTitle">See you soon.</h3>
+        <p class="modal__lede" id="tourSummary"></p>
+        <div class="modal__actions">
+          <a class="btn btn--ink" id="tourWa" href="#" target="_blank" rel="noopener"><span data-i18n="card.wa">Send on WhatsApp</span></a>
+          <button class="btn btn--line" type="button" id="tourCal"><span data-i18n="card.cal">Add to calendar</span></button>
+          <button class="btn btn--text" type="button" data-close data-i18n="tour.done">Done</button>
+        </div>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog class="modal modal--video" id="videoModal" aria-label="Zumba at Ikigai video">
+    <div class="modal__panel modal__panel--video">
+      <button class="modal__x" type="button" data-close aria-label="Close">×</button>
+      <video id="voiceVideo" controls playsinline preload="none"></video>
+      <p class="modal__vcap"><span data-i18n="alu.voicecap">Zumba, with sound.</span> · “Just another day at Ikigai” · 0:20</p>
+    </div>
+  </dialog>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Photo viewer">
+    <div class="lightbox__panel">
+      <button class="modal__x" type="button" data-close aria-label="Close">×</button>
+      <button class="lightbox__nav lightbox__nav--prev" type="button" id="lbPrev" aria-label="Previous photo">←</button>
+      <figure class="lightbox__fig">
+        <img id="lbImg" alt="" />
+        <figcaption class="plate-cap" id="lbCap"></figcaption>
+      </figure>
+      <button class="lightbox__nav lightbox__nav--next" type="button" id="lbNext" aria-label="Next photo">→</button>
+    </div>
+  </dialog>
+
+  <script src="../../shared/data.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <!-- Native scrolling on purpose: a JS smooth-scroll library judders on high-refresh / large monitors -->
+  <script src="main.js"></script>
+</body>
+</html>

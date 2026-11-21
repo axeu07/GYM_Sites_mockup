@@ -10,7 +10,7 @@ const opt = Object.fromEntries(args.filter((a) => a.startsWith("--")).map((a) =>
 const W = +(opt.w || 1440), H = +(opt.h || 900), DPR = +(opt.dpr || 2), CPU = +(opt.cpu || 1);
 import { urlFor } from "./pages.mjs";
 const DEFAULT = [
-  "website/a-lights-on/index.html", "website/b-academy/index.html", "website/c-solutions/index.html",
+  "website/a-akari/index.html", "website/b-dojo/index.html", "website/c-ikigai/index.html",
 ];
 const _OLD = [
   "website/a-floodlight/index.html", "website/b-matchday/index.html", "website/c-kinetic/index.html",

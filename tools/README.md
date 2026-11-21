@@ -1,6 +1,6 @@
 # Tools
 
-Helpers for the Fitness Solutions mockups in `../mockups`. Nothing here is deployed.
+Helpers for the IKIGAI Fitness Club mockups in `../mockups`. Nothing here is deployed.
 
 Setup (once): `npm install` (Playwright 1.64.1; uses the cached Chromium). All QA scripts serve `../mockups` over a local HTTP server themselves, because CSS logo masks do not load from `file://`.
 
@@ -21,26 +21,28 @@ Setup (once): `npm install` (Playwright 1.64.1; uses the cached Chromium). All Q
 | `interact.mjs [--page= --w=]` | Click-everything smoke test |
 | `resp.mjs <page> <out-prefix>` | 15 devices: 4 phones, 5 tablets (portrait and landscape), 6 desktops up to 4K. Overflow, small tap targets, text pushed off-screen, errors, plus screenshots |
 | `media.mjs [page] [--list]` | Every place a still or clip is shown; fails if a family (near-identical shots, or a clip plus the still taken from it) appears twice. Families are in `media/catalogue.json` |
-| `doors.mjs` | Lights On: the closed lift doors leak no light at any frame edge, across 16 screen sizes and 4 display scalings (`--old` proves the test catches the original bug) |
+| `doors.mjs` | Akari: the closed lift doors leak no light at any frame edge, across 16 screen sizes and 4 display scalings (`--old` proves the test catches the original bug) |
 | `jitter.mjs [page]` | Scroll settle on a large, uncapped-refresh screen: settle time, reversals, shaking elements |
 | `perf.mjs [pages…] [--w= --h= --dpr= --cpu=]` | Idle CPU and per-frame cost while scrolling |
 | `shot.mjs <page> <out-prefix>` | Full-page desktop, phone and reduced-motion screenshots |
 | `scrollshots.mjs <page> <out-prefix> [w] [h]` | Viewport screenshots while wheel-scrolling (works with pinned sections) |
+| `sections.mjs <page> <out-dir> [w] [h] [selectors]` | One viewport screenshot per section, for quick visual review |
 | `links.mjs` | Every relative `href` / `src` / `url()` resolves to a file |
 | `hqcrawl.mjs` | Every hero-grade file a page requests is listed in `deploy/hq-keep.txt` (run before deploying) |
 | `live.mjs [shots-dir]` | The deployed site: every page loads cleanly on a large monitor and a phone, by its link and by its bare folder address; private files are not served |
 
 ## Media pipeline (`media/`)
 
-Sources live in `../_source/` (not deployed): curated originals from the client's Google Drive.
+Sources: the client's media folder (`ikigai_medi__/` next to this repo; not deployed).
 
 | File | Purpose |
 |---|---|
-| `selection.json` + `build_images.py <_source> <out>` | The 130 curated stills; re-encodes each at 1600px and 800px |
-| `clips.txt` + `build_video.sh <ffmpeg> <src> <out> [name-regex]` | The 27 clips; cuts 720p loops, 16:9 crops and posters |
-| `catalogue.json` | What every still and clip shows, and its family. Readable copy: `../research/media-catalogue.md` |
-| `build_logo.py <logo.png> <out>` | Splits the logo into recolourable mark / wordmark / lockup masks and favicons |
-| `previews.mjs`, `og-render.mjs` | Chooser thumbnails and the link-preview image |
+| `build_ikigai.sh <media-dir> <mockups/shared>` | Builds every still (1600 / 800 px, xl, 16:9 heroes), clip (720×1280 loops, 16:9 blurred-fill versions, posters) and the slow push-ins for spaces with no footage. Needs ffmpeg |
+| `build_brand.mjs` | Renders the **stand-in** logo masks and favicons (four circles + “Ikigai” wordmark). Replace once the club sends its logo file |
+| `catalogue.json` | What every still and clip shows, and its family (used by `qa/media.mjs`) |
+| `warm-hex.mjs <files…>` | Re-tints leftover cool greys to warm neutrals (used once when re-skinning the templates) |
+| `og.html` + `og-render.mjs` | The 1200×630 link-preview image, from the club's own photos |
+| `previews.mjs` | Chooser thumbnails |
 
 ## Deploy
 
@@ -50,3 +52,5 @@ bash deploy/deploy.sh            # deploys; DRY_RUN=1 builds the clean copy with
 ```
 
 The script deploys from a clean copy that leaves out the exFAT `._*` files and any still or clip no page refers to (about 61 MB). It adds `noindex` headers and a robots.txt, keeps the Vercel project link in `deploy/.vercel`, and writes the production address to `deploy/site-url.txt` so later runs include link previews for WhatsApp.
+
+This repo has no Vercel link yet, so the first deploy creates a new project (`ikigai-directions`). The script uses `rsync` and `python3`; on Windows run it from WSL or Git Bash with both installed.

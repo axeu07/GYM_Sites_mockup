@@ -1,7 +1,7 @@
 {
-  "name": "fitness-solutions-mockup-tools",
+  "name": "ikigai-fitness-mockup-tools",
   "private": true,
-  "description": "QA, media and preview helpers for the Fitness Solutions design-direction mockups",
+  "description": "QA, media and preview helpers for the IKIGAI Fitness Club design-direction mockups",
   "type": "module",
   "scripts": {
     "check": "node qa/links.mjs && node qa/check.mjs",

@@ -5,7 +5,7 @@ import fs from "node:fs";
 const base = fs.readFileSync(new URL("../deploy/site-url.txt", import.meta.url), "utf8").trim().replace(/\/$/, "");
 const out = process.argv[2];
 // each page by the address the chooser links to, and by its bare folder address (what someone might type or share)
-const pages = ["/", ...["a-lights-on", "b-academy", "c-solutions"].flatMap(d => [`/website/${d}/index.html`, `/website/${d}`])];
+const pages = ["/", ...["a-akari", "b-dojo", "c-ikigai"].flatMap(d => [`/website/${d}/index.html`, `/website/${d}`])];
 const sizes = [{ w: 2560, h: 1440, dpr: 1.5 }, { w: 390, h: 844, dpr: 3 }];
 const browser = await chromium.launch();
 let bad = 0;

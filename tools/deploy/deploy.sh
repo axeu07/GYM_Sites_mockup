@@ -9,7 +9,7 @@
 set -euo pipefail
 HERE="$(cd "$(dirname "$0")" && pwd)"
 SRC="$HERE/../../mockups"
-TMP="${TMPDIR:-/tmp}"; OUT="${TMP%/}/fitness-solutions-directions"
+TMP="${TMPDIR:-/tmp}"; OUT="${TMP%/}/ikigai-directions"
 
 build_copy() {
   rm -rf "$OUT" && mkdir -p "$OUT"
@@ -71,7 +71,7 @@ else
   # First deploy: we only learn the address afterwards, so deploy, read the production address, then deploy again with it.
   upload "$@"
   NAME="$(python3 -c "import json,sys; print(json.load(open(sys.argv[1]))['projectName'])" "$HERE/.vercel/project.json" 2>/dev/null || true)"
-  URL="$(cd "$OUT" && npx --yes vercel@latest inspect "$(cd "$OUT" && npx --yes vercel@latest ls --prod 2>/dev/null | grep -o 'https://[^ ]*' | head -1)" 2>&1 | grep -o "https://${NAME:-fitness-solutions-directions}[a-z0-9-]*\.vercel\.app" | awk '{ print length, $0 }' | sort -n | head -1 | cut -d' ' -f2- || true)"
+  URL="$(cd "$OUT" && npx --yes vercel@latest inspect "$(cd "$OUT" && npx --yes vercel@latest ls --prod 2>/dev/null | grep -o 'https://[^ ]*' | head -1)" 2>&1 | grep -o "https://${NAME:-ikigai-directions}[a-z0-9-]*\.vercel\.app" | awk '{ print length, $0 }' | sort -n | head -1 | cut -d' ' -f2- || true)"
   if [ -n "$URL" ]; then
     echo "$URL" > "$HERE/site-url.txt"; echo "production address: $URL — redeploying with link previews"
     build_copy; inject_previews "$URL"; upload "$@"

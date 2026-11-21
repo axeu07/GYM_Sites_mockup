@@ -7,7 +7,7 @@ import { fileURLToPath } from "node:url";
 import { urlFor } from "../qa/pages.mjs";
 
 const OUT = fileURLToPath(new URL("../../mockups/shared/previews/", import.meta.url));
-const ALL = { a: "website/a-lights-on/index.html", b: "website/b-academy/index.html", c: "website/c-solutions/index.html" };
+const ALL = { a: "website/a-akari/index.html", b: "website/b-dojo/index.html", c: "website/c-ikigai/index.html" };
 const keys = process.argv.slice(2).length ? process.argv.slice(2) : Object.keys(ALL);
 const SHOTS = [
   { suffix: "", ctx: { viewport: { width: 1440, height: 900 }, deviceScaleFactor: 1 }, mouse: [820, 420] },

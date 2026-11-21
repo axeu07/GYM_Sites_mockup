@@ -7,9 +7,9 @@ import { join, extname, relative, resolve } from "node:path";
 
 export const PAGES = [
   "index.html",
-  "website/a-lights-on/index.html",
-  "website/b-academy/index.html",
-  "website/c-solutions/index.html",
+  "website/a-akari/index.html",
+  "website/b-dojo/index.html",
+  "website/c-ikigai/index.html",
 ];
 export const DIR = fileURLToPath(new URL("../../mockups/", import.meta.url));
 const TYPES = { ".html": "text/html; charset=utf-8", ".css": "text/css", ".js": "text/javascript", ".json": "application/json",

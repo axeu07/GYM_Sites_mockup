@@ -9,7 +9,7 @@ const b = await chromium.launch(); let bad = 0, n = 0, skipped = 0;
 for (const dpr of [1, 1.25, 1.5, 2]) {
   const ctx = await b.newContext({ viewport: { width: 1440, height: 900 }, deviceScaleFactor: dpr });
   const p = await ctx.newPage();
-  await p.goto(urlFor("website/a-lights-on/index.html")); await p.waitForTimeout(4000);
+  await p.goto(urlFor("website/a-akari/index.html")); await p.waitForTimeout(4000);
   // Doors are forced shut with CSS (not the is-closed class) so the page's own floor-change logic can't reopen them mid-test.
   // The white sheet sits inside the media layer (where the videos are), so it obeys the same rules as the real picture.
   await p.evaluate(() => document.querySelector("#stage").classList.add("is-closed"));

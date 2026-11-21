@@ -1,11 +1,1 @@
-# Hero-grade files to deploy (folder/key; the key's -sm / -wide variants and posters are included).
-# Everything else in shared/video/hq, shared/img/hero and shared/img/xl is left out of the deploy.
-# Check this list with: node qa/hqcrawl.mjs   (it fails if a page requests a hero-grade file not listed here)
-video/hq/ropes
-video/hq/hoodie
-video/hq/cardio
-video/hq/boxing
-img/hero/press-liftsweat
-img/hero/turf-coach
-img/hero/coach-rope-2
-img/xl/logo-cardio
+# Hero-grade folders (img/xl, img/hero) to ship. IKIGAI has no video/hq: the clips are phone footage.
