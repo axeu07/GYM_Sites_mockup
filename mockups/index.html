@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fitness Solutions · Design Directions</title>
+<meta name="description" content="Three website directions for Fitness Solutions, Dehradun — A Complete Fitness Academy since 2009.">
+<meta name="robots" content="noindex, nofollow">
+<!-- Link preview (WhatsApp, LinkedIn, iMessage). og:image must be an absolute URL: set it once the demo has its final address. -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Fitness Solutions · Design Directions">
+<meta property="og:description" content="Three ways to tell 'A Complete Fitness Academy' — working website mockups for review.">
+<meta name="twitter:card" content="summary_large_image">
+<!-- og:image / og:url (absolute URLs) are added by tools/deploy/deploy.sh when SITE_URL is set -->
+<meta name="theme-color" content="#F3F1EA">
+<link rel="icon" href="shared/brand/favicon-32.png" type="image/png">
+<link rel="apple-touch-icon" href="shared/brand/favicon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F3F1EA; --surface: #FFFFFF; --ink: #121212; --mute: #67645C; --rule: #DAD6CB; --accent: #FBE421; --accent-ink: #121212;
+    --serif: "Instrument Serif", Georgia, serif; --sans: "Inter", system-ui, sans-serif; --mono: "JetBrains Mono", ui-monospace, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg: #0F0F0E; --surface: #181816; --ink: #EDEBE6; --mute: #9B9890; --rule: #2B2A27; }
+  }
+  :root[data-theme="dark"] { --bg: #0F0F0E; --surface: #181816; --ink: #EDEBE6; --mute: #9B9890; --rule: #2B2A27; }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; font-size: clamp(16px, 0.45vw + 9.5px, 21px); overflow-x: clip; }
+  /* Above 1920px everything scales with the screen so big monitors are filled edge to edge */
+  @media (min-width: 1921px) { html { font-size: max(18px, min(calc(0.78vw + 3.2px), calc(1.39vh + 3.2px))); } }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 1rem/1.6 var(--sans); -webkit-font-smoothing: antialiased; overflow-x: clip; }
+  a { color: inherit; }
+  :focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+  .wrap { width: 100%; margin: 0 auto; padding: 0 clamp(16px, calc(4vw + 4px), 12rem); } /* full width */
+
+  header.top { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1.25rem 0; border-bottom: 1px solid var(--rule); }
+  .mark { display: flex; align-items: center; gap: .75rem; font-weight: 600; letter-spacing: -.01em; text-decoration: none; min-height: 2.75rem; }
+  .logo { display: block; width: 8.25rem; aspect-ratio: 936 / 265; background: var(--ink);
+    -webkit-mask: url(shared/brand/lockup.png) center / contain no-repeat; mask: url(shared/brand/lockup.png) center / contain no-repeat; }
+  .mark span { padding-left: .75rem; border-left: 1px solid var(--rule); white-space: nowrap; }
+  @media (max-width: 520px) { header.top .meta { display: none; } .logo { width: 7rem; } }
+  .meta { font: .75rem/1.4 var(--mono); color: var(--mute); text-transform: uppercase; letter-spacing: .06em; }
+
+  .hero { padding: clamp(3rem, 6vw, 6rem) 0 clamp(2.5rem, 4vw, 4.5rem); display: grid; gap: 1.75rem; }
+  .hero h1 { font: 400 clamp(2.6rem, 7vw, 8.5rem)/.95 var(--serif); letter-spacing: -.02em; margin: 0; max-width: 15ch; }
+  .hero h1 em { font-style: italic; color: var(--mute); }
+  .hero h1 mark { background: linear-gradient(transparent 62%, var(--accent) 62% 92%, transparent 92%); color: inherit; font-style: italic; }
+  .hero p { max-width: 60ch; color: var(--mute); margin: 0; font-size: 1.0625rem; }
+  @media (min-width: 1200px) {
+    .hero { grid-template-columns: 1.3fr 1fr; column-gap: clamp(2rem, 5vw, 6rem); align-items: end; }
+    .hero .meta, .hero .steps { grid-column: 1 / -1; }
+    .hero h1 { font-size: clamp(2.75rem, 6vw, 7.5rem); }
+    .hero p { font-size: 1.125rem; padding-bottom: .5rem; }
+  }
+  .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr)); gap: 1px; background: var(--rule); border: 1px solid var(--rule); margin-top: .75rem; }
+  .steps div { background: var(--bg); padding: 1.125rem 1.25rem; }
+  .steps b { display: block; font: 500 .75rem var(--mono); color: var(--mute); letter-spacing: .06em; margin-bottom: .375rem; }
+
+  section.group { padding: clamp(2.5rem, 5vw, 5rem) 0; border-top: 1px solid var(--rule); }
+  .group-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: .75rem 2rem; margin-bottom: 2rem; }
+  .group-head h2 { font: 400 clamp(2rem, 4.5vw, 4rem)/1 var(--serif); margin: 0; letter-spacing: -.01em; }
+  .group-head p { margin: 0; color: var(--mute); max-width: 52ch; }
+
+  .cards { display: grid; gap: clamp(1rem, 2vw, 2rem); grid-template-columns: 1fr; }
+  @media (min-width: 960px) { .cards { grid-template-columns: repeat(3, 1fr); } }
+  .card { background: var(--surface); border: 1px solid var(--rule); border-radius: .875rem; overflow: hidden; display: flex; flex-direction: column; text-decoration: none; transition: transform .35s cubic-bezier(.2,.7,.2,1), box-shadow .35s; }
+  @media (min-width: 640px) and (max-width: 959px) {
+    .card { flex-direction: row; }
+    .card .preview { flex: 0 0 44%; aspect-ratio: auto; min-height: 100%; }
+  }
+  .card:hover { transform: translateY(-4px); box-shadow: 0 20px 40px -20px rgba(0,0,0,.28); }
+  .preview { position: relative; aspect-ratio: 16 / 10; background: var(--pv-bg); overflow: hidden; display: grid; place-items: center; }
+  .preview .fallback { font: italic 400 clamp(2rem, 4vw, 3.25rem)/1 var(--serif); color: var(--pv-ink); }
+  .preview img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: top center; transition: transform .8s cubic-bezier(.2,.7,.2,1); }
+  .card:hover .preview img { transform: scale(1.03); }
+  .body { padding: 1.375rem 1.5rem 1.5rem; display: flex; flex-direction: column; gap: .75rem; flex: 1; }
+  .label { font: 500 .72rem var(--mono); text-transform: uppercase; letter-spacing: .08em; color: var(--mute); }
+  .body h3 { font: 400 2.25rem/1 var(--serif); margin: 0; letter-spacing: -.01em; }
+  .body p { margin: 0; color: var(--mute); }
+  .story { font-size: .95rem; color: var(--ink) !important; }
+  .swatches { display: flex; gap: .375rem; }
+  .swatches span { width: 1.6rem; height: 1.6rem; border-radius: 50%; border: 1px solid var(--rule); }
+  .type { font: .75rem var(--mono); color: var(--mute); }
+  .sig { margin: .25rem 0 0; padding: 0; list-style: none; display: grid; gap: .375rem; font-size: .9rem; }
+  .sig li { display: flex; gap: .5rem; }
+  .sig li::before { content: "◆"; font-size: .55rem; line-height: 2.3; color: var(--mute); }
+  .open { margin-top: auto; padding-top: .75rem; font-weight: 600; display: inline-flex; gap: .375rem; align-items: center; }
+  .open span { transition: transform .3s; }
+  .card:hover .open span { transform: translate(3px, -3px); }
+
+  /* Research */
+  .facts { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--rule); border: 1px solid var(--rule); border-radius: .75rem; overflow: hidden; }
+  @media (min-width: 760px) { .facts { grid-template-columns: repeat(3, 1fr); } }
+  @media (min-width: 1500px) { .facts { grid-template-columns: repeat(6, 1fr); } }
+  .facts div { background: var(--surface); padding: 1.25rem; display: grid; gap: .25rem; align-content: start; }
+  .facts b { font: 400 clamp(2rem, 3.4vw, 2.75rem)/1 var(--serif); }
+  .facts span { font-size: .875rem; color: var(--mute); }
+  .facts small { font: .68rem var(--mono); color: var(--mute); text-transform: uppercase; letter-spacing: .05em; }
+  .two { display: grid; gap: clamp(1.5rem, 3vw, 3rem); margin-top: clamp(2rem, 3vw, 3rem); }
+  @media (min-width: 900px) { .two { grid-template-columns: 1fr 1fr; } }
+  .two h4 { margin: 0 0 .75rem; font: 500 .78rem var(--mono); text-transform: uppercase; letter-spacing: .08em; color: var(--mute); }
+  .list { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--rule); max-width: 40rem; }
+  .list li { padding: .8rem 0; border-bottom: 1px solid var(--rule); display: grid; grid-template-columns: 1.75rem 1fr; gap: .5rem; font-size: .95rem; }
+  .list li i { font: normal .75rem/1.9 var(--mono); color: var(--mute); }
+  .list li b { font-weight: 600; }
+  .quote { margin: clamp(2rem, 3vw, 3rem) 0 0; padding: 1.5rem 1.75rem; background: var(--surface); border: 1px solid var(--rule); border-radius: .75rem; display: grid; gap: .5rem; }
+  .quote p { margin: 0; font: italic 400 clamp(1.5rem, 2.6vw, 2.25rem)/1.15 var(--serif); max-width: 40ch; }
+  .quote span { font: .75rem var(--mono); color: var(--mute); text-transform: uppercase; letter-spacing: .05em; }
+
+
+  footer { padding: 2rem 0 3rem; border-top: 1px solid var(--rule); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; color: var(--mute); font-size: .85rem; }
+  .theme { font: .75rem var(--mono); background: none; border: 1px solid var(--rule); color: var(--mute); border-radius: 99px; padding: .35rem .8rem; cursor: pointer; min-height: 2.25rem; }
+  .theme:hover { color: var(--ink); border-color: var(--ink); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="mark" href="#top" id="top" aria-label="Fitness Solutions design directions"><i class="logo" aria-hidden="true"></i> <span>Design Directions</span></a>
+    <span class="meta">Draft 01 · Nov 2026</span>
+  </header>
+
+  <section class="hero">
+    <span class="meta">Fitness Solutions · Laxman Chowk, Dehradun · Website redesign</span>
+    <h1>Three ways to tell <br><mark>A Complete Fitness Academy.</mark></h1>
+    <p>Each direction is a working, animated website built from your own photos and video. It tells a different story about the same club. Every button works: book a trial, open WhatsApp, add a visit to your calendar, browse the timetable. Open each one on a laptop and on a phone, then tell us which story feels most like Fitness Solutions.</p>
+    <div class="steps">
+      <div><b>01 · Explore</b>Open each direction on desktop and on your phone. Scroll slowly, because each one has moments that react to you.</div>
+      <div><b>02 · Choose</b>Pick the direction that feels most like the club. Mixing elements across directions is fine.</div>
+      <div><b>03 · Build</b>We build the full website in that style, with your real timetable, prices, team photos and enquiries.</div>
+    </div>
+  </section>
+
+  <section class="group" aria-labelledby="dir-h">
+    <div class="group-head">
+      <h2 id="dir-h">The three directions</h2>
+      <p>Same club, same facts, three different stories. Each is built around three signature interactions.</p>
+    </div>
+    <div class="cards" id="cards"></div>
+  </section>
+
+  <section class="group" aria-labelledby="res-h">
+    <div class="group-head">
+      <h2 id="res-h">What we found</h2>
+      <p>Before designing, we went through your current site, the 2017 archive, Justdial, FITPASS, Google-listing mirrors, Instagram, Facebook and Dehradun gym round-ups.</p>
+    </div>
+    <div class="facts" id="facts"></div>
+    <div class="two">
+      <div>
+        <h4>What the new site fixes</h4>
+        <ul class="list">
+          <li><i>01</i><span><b>Find us.</b> There's no street address, map, hours or tap-to-call on the current site. Every direction now has all of them.</span></li>
+          <li><i>02</i><span><b>Proof.</b> Your 4.7★ and 4.8★ ratings, real member words and published results now show up front instead of being missing.</span></li>
+          <li><i>03</i><span><b>Your own photography.</b> The current gallery leads with text-heavy posters. These directions lead with the floor itself: the neon, the hex lights and four floors of equipment.</span></li>
+          <li><i>04</i><span><b>Classes people can plan around.</b> Each direction has a timetable, and you can book a trial straight from a class.</span></li>
+          <li><i>05</i><span><b>Enquiries that land.</b> The booking flows work on WhatsApp and calendar today. In the full build they become real leads.</span></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Please confirm before the full build</h4>
+        <ul class="list" id="confirm"></ul>
+      </div>
+    </div>
+    <div class="quote">
+      <p>“No gimmicks here. Just solid equipment, knowledgeable trainers…”</p>
+      <span>Stanza Living · “9 best gyms in Dehradun”</span>
+    </div>
+  </section>
+
+  <footer>
+    <span>Mockups for discussion. Photos and video are from Fitness Solutions' own shoot. Anything marked “Illustrative” or “To confirm” is a placeholder until you check it.</span>
+    <button class="theme" id="theme" type="button">Toggle dark / light</button>
+  </footer>
+</div>
+
+<script src="shared/data.js"></script>
+<script>
+  const DIRS = [
+    { href: "website/a-lights-on/index.html", key: "a", label: "Direction A", name: "Lights On",
+      line: "Cinematic and nocturnal, in the gym's own purple neon and hexagon lamps.",
+      story: "Laxman Chowk, 5:30 am. The lights come on and you walk in from the street, ride up four floors, find tonight's session and pick your pass.",
+      swatches: ["#07060B", "#8B46FF", "#FBE421", "#FF3EA5"], type: "Archivo (variable width) · Manrope · Martian Mono",
+      sig: ["Hexagon light-grid hero that switches on as you move", "Elevator ride through all four floors", "Live “on the floor now” timetable"], bg: "#07060B", ink: "#FBE421" },
+    { href: "website/b-academy/index.html", key: "b", label: "Direction B", name: "The Academy",
+      line: "Editorial and credible: your tagline taken literally, as a prospectus.",
+      story: "Fitness Solutions is “A Complete Fitness Academy”, so the website reads as its 2026–27 prospectus: history, curriculum, faculty, campus, alumni, fees and admission.",
+      swatches: ["#F3EDE1", "#17140F", "#F2CF2E", "#B8321D"], type: "Newsreader · Instrument Sans · Graduate · Tiro Devanagari",
+      sig: ["Admission form that prints a live admit card", "Course-catalogue curriculum with syllabi", "Yearbook history and an English / हिन्दी toggle"], bg: "#F3EDE1", ink: "#B8321D" },
+    { href: "website/c-solutions/index.html", key: "c", label: "Direction C", name: "Fitness, Solved.",
+      line: "Bright, interactive and numbers-first: the name taken literally.",
+      story: "Everyone walks in with a problem. The site diagnoses it, prescribes a plan, shows it on the four floors and proves it with numbers, then books the assessment.",
+      swatches: ["#F2F3EF", "#0E0F13", "#FFE21A", "#6B3CF6"], type: "Bricolage Grotesque · Geist · Geist Mono",
+      sig: ["Solution engine: your goal becomes a weekly plan", "Know-your-numbers calculator (BMI, calories, protein)", "Isometric four-floor building explorer"], bg: "#0E0F13", ink: "#FFE21A" },
+  ];
+  document.getElementById("cards").innerHTML = DIRS.map((d) => `
+    <a class="card" href="${d.href}" style="--pv-bg:${d.bg};--pv-ink:${d.ink}">
+      <div class="preview">
+        <span class="fallback">${d.name}</span>
+        <picture>
+          <source media="(min-width: 640px) and (max-width: 959px)" srcset="shared/previews/${d.key}-m.jpg">
+          <img src="shared/previews/${d.key}.jpg" alt="${d.name}: homepage preview" loading="lazy" onerror="this.closest('picture').remove()">
+        </picture>
+      </div>
+      <div class="body">
+        <span class="label">${d.label}</span>
+        <h3>${d.name}</h3>
+        <p>${d.line}</p>
+        <p class="story">${d.story}</p>
+        <div class="swatches">${d.swatches.map((c) => `<span style="background:${c}" title="${c}"></span>`).join("")}</div>
+        <span class="type">${d.type}</span>
+        <ul class="sig">${d.sig.map((s) => `<li>${s}</li>`).join("")}</ul>
+        <span class="open">Open direction <span aria-hidden="true">↗</span></span>
+      </div>
+    </a>`).join("");
+
+  const F = window.FS;
+  const FACTS = [
+    { k: `Since ${F.brand.since}`, v: "One of Dehradun's oldest gyms", s: "Your site, listings" },
+    { k: "4 floors", v: "80+ workout stations; Matrix, Hoist, Life Fitness and Star Trac", s: "Your site" },
+    { k: "4.7★", v: "On Justdial, from 300+ ratings", s: "Justdial" },
+    { k: "4.8★", v: "On FITPASS, from 48 ratings", s: "FITPASS" },
+    { k: "3.2K", v: "Instagram followers (@fit_nesssolutions)", s: "Instagram" },
+    { k: "₹49/day", v: "The annual plan works out to ₹18,000 a year, which is the strongest price story", s: "Your prices" },
+  ];
+  document.getElementById("facts").innerHTML = FACTS.map((f) => `<div><b>${f.k}</b><span>${f.v}</span><small>${f.s}</small></div>`).join("");
+
+  const CONFIRM = [
+    "Opening hours. Sources disagree, so we show Mon–Sat 5:30 am – 10 pm and Sunday closed.",
+    "Founding year. The site says “Est. 2009” and “18+ years”, but 2009 to 2026 is 17 years.",
+    "Which zone is on which floor (cardio, strength, functional, studio).",
+    "The real class timetable, and which coach runs each class.",
+    "Which number to publish: +91 99172 82333 (listings) or +91 74678 28233 (WhatsApp on your site).",
+    "Instagram handle @fit_nesssolutions, the Les Mills licence and the director's credentials.",
+    "What membership includes, and personal training prices.",
+    "Permission to show member names and results, and the member testimonial video.",
+  ];
+  document.getElementById("confirm").innerHTML = CONFIRM.map((c, i) => `<li><i>${String(i + 1).padStart(2, "0")}</i><span>${c}</span></li>`).join("");
+
+  // Theme toggle (remembered per viewer; works without storage too)
+  const root = document.documentElement;
+  try { const t = localStorage.getItem("fs-theme"); if (t) root.dataset.theme = t; } catch (e) {}
+  document.getElementById("theme").addEventListener("click", () => {
+    const dark = root.dataset.theme ? root.dataset.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+    root.dataset.theme = dark ? "light" : "dark";
+    try { localStorage.setItem("fs-theme", root.dataset.theme); } catch (e) {}
+  });
+</script>
+</body>
+</html>

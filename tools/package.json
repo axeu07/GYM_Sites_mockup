@@ -1,0 +1,14 @@
+{
+  "name": "fitness-solutions-mockup-tools",
+  "private": true,
+  "description": "QA, media and preview helpers for the Fitness Solutions design-direction mockups",
+  "type": "module",
+  "scripts": {
+    "check": "node qa/links.mjs && node qa/check.mjs",
+    "interact": "node qa/interact.mjs",
+    "previews": "node media/previews.mjs"
+  },
+  "dependencies": {
+    "playwright": "1.64.1"
+  }
+}

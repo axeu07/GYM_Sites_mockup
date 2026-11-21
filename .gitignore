@@ -1,0 +1,16 @@
+# macOS and external-drive metadata
+._*
+.DS_Store
+
+# installable packages (npm install in tools/)
+node_modules/
+
+# raw client downloads and video masters (3.1 GB); the sites use the curated copies in mockups/shared
+_source/
+
+# local deploy link and any secrets
+.vercel/
+.env*
+
+# local editor/assistant settings
+.claude/

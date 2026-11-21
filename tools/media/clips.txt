@@ -1,0 +1,29 @@
+# name | source | start | duration | mode (loop|pingpong|audio) | wide-crop centre (0-1, or - for none)
+floor|v125_C9629.MP4|0|4.8|loop|0.52
+dumbbells|v208_C1765.MP4|0|4.8|loop|0.55
+cable|v159_C9676.MP4|0.5|6|loop|-
+row|v035_C9556.MP4|0|6|loop|-
+night|v161_C9679.MP4|0|8|loop|0.5
+spin|v187_C9723.MP4|0|4.3|loop|0.55
+reception|v199_C1751.MP4|0|2.4|pingpong|0.42
+hoodie|v223_C1780.MP4|0|5.2|loop|-
+functional|v236_C1793.MP4|0|2.88|pingpong|0.42
+rack|v120_C9623.MP4|0|2.2|pingpong|0.55
+ropes|v148_C9663.MP4|0|2.2|pingpong|0.6
+film|v076_Fitness_solutions.MOV|0|59.2|audio|-
+voice-senior|v278_C1838.MP4|0|41.28|audio|-
+# --- added 16 Nov 2026: clips that match specific programmes ---
+kettlebell|v045_C9566.MP4|0.5|6|loop|-
+console|v138_C9643.MP4|0|2.4|pingpong|-
+coach|v150_C9665.MP4|1|6|loop|-
+bosu|v178_C9708.MP4|0|3.2|pingpong|-
+rider|v181_C9713.MP4|6.5|6|loop|-
+step|v182_C9714.MP4|1.2|6|loop|-
+sign|v191_C1742.MP4|0|3.36|pingpong|0.3
+cardio|v225_C1782.MP4|0|3.36|pingpong|0.55
+airbike|v241_C1798.MP4|0|3.84|loop|-
+rower|v250_C1807.MP4|0|3.84|loop|-
+boxing|v252_C1809.MP4|5.7|3.3|loop|-
+sled|v253_C1810.MP4|0|5.76|loop|-
+studio|v269_C1827.MP4|0|2.88|pingpong|0.55
+desk|v288_C1848.MP4|0|2.6|pingpong|-
